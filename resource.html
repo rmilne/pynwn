@@ -166,6 +166,28 @@ type.</p>
 </dd></dl>
 
 </div>
+<div class="section" id="directorycontainer">
+<h2>DirectoryContainer<a class="headerlink" href="#directorycontainer" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pynwn.resource.DirectoryContainer">
+<em class="property">class </em><tt class="descclassname">pynwn.resource.</tt><tt class="descname">DirectoryContainer</tt><big>(</big><em>path</em>, <em>only_nwn=True</em><big>)</big><a class="headerlink" href="#pynwn.resource.DirectoryContainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Container that directly wraps a directory (e.g. override/).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>path</strong> &#8211; Directory path.</li>
+<li><strong>only_nwn</strong> &#8211; default <tt class="docutils literal"><span class="pre">True</span></tt>, If <tt class="docutils literal"><span class="pre">False</span></tt> the <tt class="docutils literal"><span class="pre">DirectoryContainer</span></tt> will attempt to load all files,
+even those that are not NWN resource types.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
 <div class="section" id="resourcemanager">
 <h2>ResourceManager<a class="headerlink" href="#resourcemanager" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
@@ -173,9 +195,47 @@ type.</p>
 <em class="property">class </em><tt class="descclassname">pynwn.resource.</tt><tt class="descname">ResourceManager</tt><a class="headerlink" href="#pynwn.resource.ResourceManager" title="Permalink to this definition">¶</a></dt>
 <dd><p>A container for Container objects.</p>
 <dl class="method">
+<dt id="pynwn.resource.ResourceManager.__getitem__">
+<tt class="descname">__getitem__</tt><big>(</big><em>fname</em><big>)</big><a class="headerlink" href="#pynwn.resource.ResourceManager.__getitem__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a ContentObject by file name.
+The order of search is the order in which add_container was called.
+I.e. the first added will have the highest priority</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="pynwn.resource.ResourceManager.add_container">
 <tt class="descname">add_container</tt><big>(</big><em>container</em><big>)</big><a class="headerlink" href="#pynwn.resource.ResourceManager.add_container" title="Permalink to this definition">¶</a></dt>
 <dd><p>Adds a container</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pynwn.resource.ResourceManager.from_module">
+<em class="property">static </em><tt class="descname">from_module</tt><big>(</big><em>mod</em>, <em>use_override=False</em>, <em>include_bioware=True</em>, <em>path='C:\NeverwinterNights\NWN\'</em><big>)</big><a class="headerlink" href="#pynwn.resource.ResourceManager.from_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a ResourceManager object from a module or module director.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>mod</strong> &#8211; Path to module or module directory.</li>
+<li><strong>use_override</strong> &#8211; default False, If true the overried directory in <tt class="docutils literal"><span class="pre">path</span></tt> will be used.</li>
+<li><strong>include_bioware</strong> &#8211; default True, If false Bioware NWN BIF files will not be used.</li>
+<li><strong>path</strong> &#8211; default &#8220;C:NeverwinterNightsNWN&#8221;, Path to NWN directory.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>NOTES:</strong></p>
+<ul class="simple">
+<li>If a directory is passed in <tt class="docutils literal"><span class="pre">mod</span></tt> it <strong>must</strong> contain a <tt class="docutils literal"><span class="pre">module.ifo</span></tt> file.</li>
+<li>If <tt class="docutils literal"><span class="pre">include_bioware</span></tt> is <tt class="docutils literal"><span class="pre">False</span></tt>, <tt class="docutils literal"><span class="pre">path</span></tt> can be any working directory
+that has the same directory stucture as the default NWN installation. I.e.
+hak files are in the subdirectory &#8216;hak&#8217;, overrides in directory &#8216;override&#8217;.</li>
+<li>When loading the module&#8217;s HAKs .hak files will attempt to be loaded first.
+If no file exists, then a directory with the <tt class="docutils literal"><span class="pre">.hak</span></tt> files name will attempt
+to be loaded.</li>
+</ul>
 </dd></dl>
 
 <dl class="method">
@@ -221,6 +281,7 @@ Note: all file names are converted to lowercase.</p>
 <li><a class="reference internal" href="#">PyNWN Resources</a><ul>
 <li><a class="reference internal" href="#container">Container</a></li>
 <li><a class="reference internal" href="#contentobject">ContentObject</a></li>
+<li><a class="reference internal" href="#directorycontainer">DirectoryContainer</a></li>
 <li><a class="reference internal" href="#resourcemanager">ResourceManager</a></li>
 </ul>
 </li>
