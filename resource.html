@@ -118,6 +118,26 @@ a given filename.</p>
 <em class="property">class </em><tt class="descclassname">pynwn.resource.</tt><tt class="descname">ContentObject</tt><big>(</big><em>resref</em>, <em>res_type</em>, <em>io=None</em>, <em>offset=None</em>, <em>size=None</em>, <em>abspath=None</em><big>)</big><a class="headerlink" href="#pynwn.resource.ContentObject" title="Permalink to this definition">¶</a></dt>
 <dd><p>A ContentObject is an abstraction of any particular NWN resource object
 either in NWN container (i.e. a hak, mod, or erf) or in a file.</p>
+<p>NOTE: Parament abspath is ONLY used when the content object is in a DirectoryContainer.  Since
+modifications to content objects are not immediately written to disk, if <tt class="docutils literal"><span class="pre">io</span></tt>
+is changed from a file to cStringIO, it&#8217;s necessary to know where to write
+the file when DirectoryContainer.save() is called.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>resref</strong> &#8211; Template resref name.</li>
+<li><strong>res_type</strong> &#8211; Resource type.</li>
+<li><strong>io</strong> &#8211; Either a file name or cStringIO.</li>
+<li><strong>offset</strong> &#8211; Data offest in <tt class="docutils literal"><span class="pre">io</span></tt>.</li>
+<li><strong>size</strong> &#8211; Data size.</li>
+<li><strong>abspath</strong> &#8211; Absolute path to the file if one is contained in <tt class="docutils literal"><span class="pre">io</span></tt>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 <dl class="staticmethod">
 <dt id="pynwn.resource.ContentObject.from_file">
 <em class="property">static </em><tt class="descname">from_file</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pynwn.resource.ContentObject.from_file" title="Permalink to this definition">¶</a></dt>
