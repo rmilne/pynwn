@@ -208,6 +208,13 @@ I.e. the first added will have the highest priority</p>
 <dd><p>Adds a container</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.resource.ResourceManager.creatures">
+<tt class="descname">creatures</tt><big>(</big><em>glob=None</em><big>)</big><a class="headerlink" href="#pynwn.resource.ResourceManager.creatures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of Creature objects contained in
+all of the resource managers containers.</p>
+</dd></dl>
+
 <dl class="staticmethod">
 <dt id="pynwn.resource.ResourceManager.from_module">
 <em class="property">static </em><tt class="descname">from_module</tt><big>(</big><em>mod</em>, <em>use_override=False</em>, <em>include_bioware=True</em>, <em>path='C:\NeverwinterNights\NWN\'</em><big>)</big><a class="headerlink" href="#pynwn.resource.ResourceManager.from_module" title="Permalink to this definition">¶</a></dt>
@@ -257,6 +264,14 @@ in one of the containers.</p>
 <dd><p>Returns a list of files matching a glob pattern...
 i.e. Unix shell-style wildcards: *.utc
 Note: all file names are converted to lowercase.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of tuples (&lt;container&gt;, &lt;list of files&gt;)</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">

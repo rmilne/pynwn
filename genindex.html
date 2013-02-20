@@ -228,10 +228,6 @@
   </dt>
 
       
-  <dt><a href="object.html#pynwn.obj.creature.Creature.charisma">charisma (pynwn.obj.creature.Creature attribute)</a>
-  </dt>
-
-      
   <dt><a href="object.html#pynwn.obj.creature.Creature.classes">classes (pynwn.obj.creature.Creature attribute)</a>
   </dt>
 
@@ -303,12 +299,12 @@
   </dt>
 
       </dl></dd>
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="object.html#pynwn.obj.creature.Creature.corpse_decay">corpse_decay (pynwn.obj.creature.Creature attribute)</a>
   </dt>
 
+  </dl></td>
+  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="object.html#pynwn.obj.item.Item.cost">cost (pynwn.obj.item.Item attribute)</a>
   </dt>
@@ -322,11 +318,11 @@
   </dt>
 
       
-  <dt><a href="object.html#pynwn.obj.creature.Creature.cr_adjust">cr_adjust (pynwn.obj.creature.Creature attribute)</a>
+  <dt><a href="object.html#pynwn.obj.creature.Creature">Creature (class in pynwn.obj.creature)</a>
   </dt>
 
       
-  <dt><a href="object.html#pynwn.obj.creature.Creature">Creature (class in pynwn.obj.creature)</a>
+  <dt><a href="object.html#pynwn.obj.creature.CreatureInstance">CreatureInstance (class in pynwn.obj.creature)</a>
   </dt>
 
       
@@ -334,11 +330,11 @@
   </dt>
 
       
-  <dt><a href="object.html#pynwn.obj.item.Item.cursed">cursed (pynwn.obj.item.Item attribute)</a>
+  <dt><a href="resource.html#pynwn.resource.ResourceManager.creatures">creatures() (pynwn.resource.ResourceManager method)</a>
   </dt>
 
       
-  <dt><a href="object.html#pynwn.obj.trigger.Trigger.cursor">cursor (pynwn.obj.trigger.Trigger attribute)</a>
+  <dt><a href="object.html#pynwn.obj.item.Item.cursed">cursed (pynwn.obj.item.Item attribute)</a>
   </dt>
 
   </dl></td>
@@ -424,6 +420,10 @@
   </dt>
 
       
+  <dt><a href="object.html#pynwn.obj.door.DoorInstance">DoorInstance (class in pynwn.obj.door)</a>
+  </dt>
+
+      
   <dt><a href="code.html#pynwn.gff.Gff.dump">dump() (pynwn.gff.Gff method)</a>
   </dt>
 
@@ -443,6 +443,10 @@
 
       
   <dt><a href="object.html#pynwn.obj.encounter.Encounter">Encounter (class in pynwn.obj.encounter)</a>
+  </dt>
+
+      
+  <dt><a href="object.html#pynwn.obj.encounter.EncounterInstance">EncounterInstance (class in pynwn.obj.encounter)</a>
   </dt>
 
       
@@ -614,10 +618,6 @@
   </dt>
 
       
-  <dt><a href="code.html#pynwn.gff.Gff.getstructure">getstructure() (pynwn.gff.Gff method)</a>
-  </dt>
-
-      
   <dt><a href="code.html#pynwn.gff.Gff">Gff (class in pynwn.gff)</a>
   </dt>
 
@@ -763,12 +763,12 @@
   <dt><a href="object.html#pynwn.obj.sound.Sound.interval">interval (pynwn.obj.sound.Sound attribute)</a>
   </dt>
 
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="object.html#pynwn.obj.sound.Sound.interval_variation">interval_variation (pynwn.obj.sound.Sound attribute)</a>
   </dt>
 
+  </dl></td>
+  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="object.html#pynwn.obj.creature.Creature.is_immortal">is_immortal (pynwn.obj.creature.Creature attribute)</a>
   </dt>
@@ -779,6 +779,10 @@
 
       
   <dt><a href="object.html#pynwn.obj.item.Item">Item (class in pynwn.obj.item)</a>
+  </dt>
+
+      
+  <dt><a href="object.html#pynwn.obj.item.ItemInstance">ItemInstance (class in pynwn.obj.item)</a>
   </dt>
 
       
@@ -832,26 +836,26 @@
   </dl></td>
   <td style="width: 33%" valign="top"><dl>
       
-  <dt><a href="object.html#pynwn.obj.door.Door.key_name">key_name (pynwn.obj.door.Door attribute)</a>
-  </dt>
-
-      <dd><dl>
-        
-  <dt><a href="object.html#pynwn.obj.placeable.Placeable.key_name">(pynwn.obj.placeable.Placeable attribute)</a>
-  </dt>
-
-        
-  <dt><a href="object.html#pynwn.obj.trigger.Trigger.key_name">(pynwn.obj.trigger.Trigger attribute)</a>
-  </dt>
-
-      </dl></dd>
-      
   <dt><a href="object.html#pynwn.obj.door.Door.key_required">key_required (pynwn.obj.door.Door attribute)</a>
   </dt>
 
       <dd><dl>
         
   <dt><a href="object.html#pynwn.obj.placeable.Placeable.key_required">(pynwn.obj.placeable.Placeable attribute)</a>
+  </dt>
+
+      </dl></dd>
+      
+  <dt><a href="object.html#pynwn.obj.door.Door.key_tag">key_tag (pynwn.obj.door.Door attribute)</a>
+  </dt>
+
+      <dd><dl>
+        
+  <dt><a href="object.html#pynwn.obj.placeable.Placeable.key_tag">(pynwn.obj.placeable.Placeable attribute)</a>
+  </dt>
+
+        
+  <dt><a href="object.html#pynwn.obj.trigger.Trigger.key_tag">(pynwn.obj.trigger.Trigger attribute)</a>
   </dt>
 
       </dl></dd>
@@ -1157,33 +1161,39 @@
   <dt><a href="object.html#pynwn.obj.creature.Creature.phenotype">phenotype (pynwn.obj.creature.Creature attribute)</a>
   </dt>
 
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="object.html#pynwn.obj.sound.Sound.pitch_variation">pitch_variation (pynwn.obj.sound.Sound attribute)</a>
   </dt>
 
+  </dl></td>
+  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="object.html#pynwn.obj.placeable.Placeable">Placeable (class in pynwn.obj.placeable)</a>
+  </dt>
+
+      
+  <dt><a href="object.html#pynwn.obj.placeable.PlaceableInstance">PlaceableInstance (class in pynwn.obj.placeable)</a>
   </dt>
 
       
   <dt><a href="object.html#pynwn.obj.area.Area.placeables">placeables (pynwn.obj.area.Area attribute)</a>
   </dt>
 
+      <dd><dl>
+        
+  <dt><a href="object.html#pynwn.obj.module.Module.placeables">(pynwn.obj.module.Module attribute)</a>
+  </dt>
+
+      </dl></dd>
       
   <dt><a href="object.html#pynwn.obj.encounter.Encounter.player_only">player_only (pynwn.obj.encounter.Encounter attribute)</a>
   </dt>
 
       
-  <dt><a href="object.html#pynwn.obj.creature.Creature.plot">plot (pynwn.obj.creature.Creature attribute)</a>
+  <dt><a href="object.html#pynwn.obj.door.Door.plot">plot (pynwn.obj.door.Door attribute)</a>
   </dt>
 
       <dd><dl>
-        
-  <dt><a href="object.html#pynwn.obj.door.Door.plot">(pynwn.obj.door.Door attribute)</a>
-  </dt>
-
         
   <dt><a href="object.html#pynwn.obj.item.Item.plot">(pynwn.obj.item.Item attribute)</a>
   </dt>
@@ -1353,6 +1363,20 @@
   <dt><a href="code.html#pynwn.gff.Gff.save">save() (pynwn.gff.Gff method)</a>
   </dt>
 
+      <dd><dl>
+        
+  <dt><a href="object.html#pynwn.obj.area.Area.save">(pynwn.obj.area.Area method)</a>
+  </dt>
+
+        
+  <dt><a href="object.html#pynwn.obj.creature.Creature.save">(pynwn.obj.creature.Creature method)</a>
+  </dt>
+
+        
+  <dt><a href="object.html#pynwn.obj.placeable.Placeable.save">(pynwn.obj.placeable.Placeable method)</a>
+  </dt>
+
+      </dl></dd>
       
   <dt><a href="object.html#pynwn.obj.creature.Creature.save_fortitude">save_fortitude (pynwn.obj.creature.Creature attribute)</a>
   </dt>
@@ -1456,6 +1480,12 @@
   </dt>
 
       
+  <dt><a href="object.html#pynwn.obj.sound.SoundInstance">SoundInstance (class in pynwn.obj.sound)</a>
+  </dt>
+
+  </dl></td>
+  <td style="width: 33%" valign="top"><dl>
+      
   <dt><a href="object.html#pynwn.obj.area.Area.sounds">sounds (pynwn.obj.area.Area attribute)</a>
   </dt>
 
@@ -1465,12 +1495,6 @@
   </dt>
 
       </dl></dd>
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="object.html#pynwn.obj.creature.Creature.soundset">soundset (pynwn.obj.creature.Creature attribute)</a>
-  </dt>
-
       
   <dt><a href="object.html#pynwn.obj.encounter.Encounter.spawn_option">spawn_option (pynwn.obj.encounter.Encounter attribute)</a>
   </dt>
@@ -1501,6 +1525,10 @@
 
       
   <dt><a href="object.html#pynwn.obj.store.Store">Store (class in pynwn.obj.store)</a>
+  </dt>
+
+      
+  <dt><a href="object.html#pynwn.obj.store.StoreInstance">StoreInstance (class in pynwn.obj.store)</a>
   </dt>
 
       
@@ -1696,6 +1724,10 @@
   </dt>
 
       
+  <dt><a href="object.html#pynwn.obj.trigger.TriggerInstance">TriggerInstance (class in pynwn.obj.trigger)</a>
+  </dt>
+
+      
   <dt><a href="object.html#pynwn.obj.area.Area.triggers">triggers (pynwn.obj.area.Area attribute)</a>
   </dt>
 
@@ -1751,6 +1783,10 @@
 
       
   <dt><a href="object.html#pynwn.obj.waypoint.Waypoint">Waypoint (class in pynwn.obj.waypoint)</a>
+  </dt>
+
+      
+  <dt><a href="object.html#pynwn.obj.waypoint.WaypointInstance">WaypointInstance (class in pynwn.obj.waypoint)</a>
   </dt>
 
       
