@@ -55,21 +55,35 @@
 <div class="section" id="area">
 <h2>Area<a class="headerlink" href="#area" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.area.Area">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.area.</tt><tt class="descname">Area</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.obj.area.Area" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area">
+<em class="property">class </em><tt class="descclassname">pynwn.area.</tt><tt class="descname">Area</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.area.Area" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="method">
-<dt id="pynwn.obj.area.Area.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.obj.area.Area.__init__" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.area.Area.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.area.Area.__module__">
-<tt class="descname">__module__</tt><em class="property"> = 'pynwn.obj.area'</em><a class="headerlink" href="#pynwn.obj.area.Area.__module__" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area.__module__">
+<tt class="descname">__module__</tt><em class="property"> = 'pynwn.area'</em><a class="headerlink" href="#pynwn.area.Area.__module__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.area.Area.encounters">
-<tt class="descname">encounters</tt><a class="headerlink" href="#pynwn.obj.area.Area.encounters" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area.creatures">
+<tt class="descname">creatures</tt><a class="headerlink" href="#pynwn.area.Area.creatures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature instances.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of CreatureInstance objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.encounters">
+<tt class="descname">encounters</tt><a class="headerlink" href="#pynwn.area.Area.encounters" title="Permalink to this definition">¶</a></dt>
 <dd><p>Encounters</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -82,26 +96,26 @@
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.area.Area.fog_clip_distance">
-<tt class="descname">fog_clip_distance</tt><a class="headerlink" href="#pynwn.obj.area.Area.fog_clip_distance" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area.fog_clip_distance">
+<tt class="descname">fog_clip_distance</tt><a class="headerlink" href="#pynwn.area.Area.fog_clip_distance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fog clip distance.</p>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="pynwn.obj.area.Area.height">
-<tt class="descname">height</tt><a class="headerlink" href="#pynwn.obj.area.Area.height" title="Permalink to this definition">¶</a></dt>
-<dd><p>Area height.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.area.Area.name">
-<tt class="descname">name</tt><a class="headerlink" href="#pynwn.obj.area.Area.name" title="Permalink to this definition">¶</a></dt>
+<dl class="method">
+<dt id="pynwn.area.Area.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.area.Area.get_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Localized name.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.area.Area.placeables">
-<tt class="descname">placeables</tt><a class="headerlink" href="#pynwn.obj.area.Area.placeables" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area.height">
+<tt class="descname">height</tt><a class="headerlink" href="#pynwn.area.Area.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Area height.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.placeables">
+<tt class="descname">placeables</tt><a class="headerlink" href="#pynwn.area.Area.placeables" title="Permalink to this definition">¶</a></dt>
 <dd><p>Placeables</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -114,19 +128,19 @@
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.area.Area.resref">
-<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.obj.area.Area.resref" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.area.Area.resref" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resref.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="pynwn.obj.area.Area.save">
-<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.obj.area.Area.save" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.area.Area.save" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.area.Area.script">
-<tt class="descname">script</tt><a class="headerlink" href="#pynwn.obj.area.Area.script" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area.script">
+<tt class="descname">script</tt><a class="headerlink" href="#pynwn.area.Area.script" title="Permalink to this definition">¶</a></dt>
 <dd><p>Scripts.  Responds to script events:</p>
 <ol class="arabic simple">
 <li>Event.ENTER</li>
@@ -136,9 +150,15 @@
 </ol>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.area.Area.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.area.Area.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.area.Area.sounds">
-<tt class="descname">sounds</tt><a class="headerlink" href="#pynwn.obj.area.Area.sounds" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area.sounds">
+<tt class="descname">sounds</tt><a class="headerlink" href="#pynwn.area.Area.sounds" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sounds</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -151,20 +171,34 @@
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.area.Area.tag">
-<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.obj.area.Area.tag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area.stores">
+<tt class="descname">stores</tt><a class="headerlink" href="#pynwn.area.Area.stores" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stores</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of StoreInstance objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.area.Area.tag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.area.Area.tileset">
-<tt class="descname">tileset</tt><a class="headerlink" href="#pynwn.obj.area.Area.tileset" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area.tileset">
+<tt class="descname">tileset</tt><a class="headerlink" href="#pynwn.area.Area.tileset" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tileset.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.area.Area.triggers">
-<tt class="descname">triggers</tt><a class="headerlink" href="#pynwn.obj.area.Area.triggers" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area.triggers">
+<tt class="descname">triggers</tt><a class="headerlink" href="#pynwn.area.Area.triggers" title="Permalink to this definition">¶</a></dt>
 <dd><p>Triggers</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -177,8 +211,8 @@
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.area.Area.waypoints">
-<tt class="descname">waypoints</tt><a class="headerlink" href="#pynwn.obj.area.Area.waypoints" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area.waypoints">
+<tt class="descname">waypoints</tt><a class="headerlink" href="#pynwn.area.Area.waypoints" title="Permalink to this definition">¶</a></dt>
 <dd><p>Waypoints</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -191,8 +225,8 @@
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.area.Area.width">
-<tt class="descname">width</tt><a class="headerlink" href="#pynwn.obj.area.Area.width" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.area.Area.width">
+<tt class="descname">width</tt><a class="headerlink" href="#pynwn.area.Area.width" title="Permalink to this definition">¶</a></dt>
 <dd><p>Area width.</p>
 </dd></dl>
 
@@ -202,25 +236,25 @@
 <div class="section" id="creature">
 <h2>Creature<a class="headerlink" href="#creature" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.creature.Creature">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.creature.</tt><tt class="descname">Creature</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.obj.creature.Creature" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature">
+<em class="property">class </em><tt class="descclassname">pynwn.creature.</tt><tt class="descname">Creature</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.creature.Creature" title="Permalink to this definition">¶</a></dt>
 <dd><p>This abstracts over UTCs only... It doesn&#8217;t handle all the additional
 fields one finds in BICs</p>
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.appearance">
-<tt class="descname">appearance</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.appearance" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.appearance">
+<tt class="descname">appearance</tt><a class="headerlink" href="#pynwn.creature.Creature.appearance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Appearance ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.bodybag">
-<tt class="descname">bodybag</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.bodybag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.bodybag">
+<tt class="descname">bodybag</tt><a class="headerlink" href="#pynwn.creature.Creature.bodybag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Body bag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.classes">
-<tt class="descname">classes</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.classes" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.classes">
+<tt class="descname">classes</tt><a class="headerlink" href="#pynwn.creature.Creature.classes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creature&#8217;s classes.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -233,62 +267,56 @@ fields one finds in BICs</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.comment">
-<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.comment" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.creature.Creature.comment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Comment.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.constitution">
-<tt class="descname">constitution</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.constitution" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.constitution">
+<tt class="descname">constitution</tt><a class="headerlink" href="#pynwn.creature.Creature.constitution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creature&#8217;s constitution.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.conversation">
-<tt class="descname">conversation</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.conversation" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.conversation">
+<tt class="descname">conversation</tt><a class="headerlink" href="#pynwn.creature.Creature.conversation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dialog resref.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.corpse_decay">
-<tt class="descname">corpse_decay</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.corpse_decay" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.corpse_decay">
+<tt class="descname">corpse_decay</tt><a class="headerlink" href="#pynwn.creature.Creature.corpse_decay" title="Permalink to this definition">¶</a></dt>
 <dd><p>Corpse decay time.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.cr">
-<tt class="descname">cr</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.cr" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.cr">
+<tt class="descname">cr</tt><a class="headerlink" href="#pynwn.creature.Creature.cr" title="Permalink to this definition">¶</a></dt>
 <dd><p>Challenge Rating</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.description">
-<tt class="descname">description</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.description" title="Permalink to this definition">¶</a></dt>
-<dd><p>Localized description.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.dexterity">
-<tt class="descname">dexterity</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.dexterity" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.dexterity">
+<tt class="descname">dexterity</tt><a class="headerlink" href="#pynwn.creature.Creature.dexterity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creature&#8217;s dexterity.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.diety">
-<tt class="descname">diety</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.diety" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.diety">
+<tt class="descname">diety</tt><a class="headerlink" href="#pynwn.creature.Creature.diety" title="Permalink to this definition">¶</a></dt>
 <dd><p>Deity</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.disarmable">
-<tt class="descname">disarmable</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.disarmable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.disarmable">
+<tt class="descname">disarmable</tt><a class="headerlink" href="#pynwn.creature.Creature.disarmable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Disarmable flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.equips">
-<tt class="descname">equips</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.equips" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.equips">
+<tt class="descname">equips</tt><a class="headerlink" href="#pynwn.creature.Creature.equips" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creature&#8217;s equipment list.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -301,14 +329,14 @@ fields one finds in BICs</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.faction">
-<tt class="descname">faction</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.faction" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.faction">
+<tt class="descname">faction</tt><a class="headerlink" href="#pynwn.creature.Creature.faction" title="Permalink to this definition">¶</a></dt>
 <dd><p>Faction ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.feats">
-<tt class="descname">feats</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.feats" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.feats">
+<tt class="descname">feats</tt><a class="headerlink" href="#pynwn.creature.Creature.feats" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creature&#8217;s feats.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -321,62 +349,80 @@ fields one finds in BICs</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.gender">
-<tt class="descname">gender</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.gender" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.gender">
+<tt class="descname">gender</tt><a class="headerlink" href="#pynwn.creature.Creature.gender" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gender.</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.creature.Creature.get_description">
+<tt class="descname">get_description</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.creature.Creature.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.creature.Creature.get_name_first">
+<tt class="descname">get_name_first</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.creature.Creature.get_name_first" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized first name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.creature.Creature.get_name_last">
+<tt class="descname">get_name_last</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.creature.Creature.get_name_last" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized last name</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.goodevil">
-<tt class="descname">goodevil</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.goodevil" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.goodevil">
+<tt class="descname">goodevil</tt><a class="headerlink" href="#pynwn.creature.Creature.goodevil" title="Permalink to this definition">¶</a></dt>
 <dd><p>Good - Evil</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.hp">
-<tt class="descname">hp</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.hp" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.hp">
+<tt class="descname">hp</tt><a class="headerlink" href="#pynwn.creature.Creature.hp" title="Permalink to this definition">¶</a></dt>
 <dd><p>HP.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.hp_current">
-<tt class="descname">hp_current</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.hp_current" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.hp_current">
+<tt class="descname">hp_current</tt><a class="headerlink" href="#pynwn.creature.Creature.hp_current" title="Permalink to this definition">¶</a></dt>
 <dd><p>Current hitpoints.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.hp_max">
-<tt class="descname">hp_max</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.hp_max" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.hp_max">
+<tt class="descname">hp_max</tt><a class="headerlink" href="#pynwn.creature.Creature.hp_max" title="Permalink to this definition">¶</a></dt>
 <dd><p>Maximum hitpoints.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.intelligence">
-<tt class="descname">intelligence</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.intelligence" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.intelligence">
+<tt class="descname">intelligence</tt><a class="headerlink" href="#pynwn.creature.Creature.intelligence" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creature&#8217;s intelligence.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.interruptable">
-<tt class="descname">interruptable</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.interruptable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.interruptable">
+<tt class="descname">interruptable</tt><a class="headerlink" href="#pynwn.creature.Creature.interruptable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Conversation interruptable flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.is_immortal">
-<tt class="descname">is_immortal</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.is_immortal" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.is_immortal">
+<tt class="descname">is_immortal</tt><a class="headerlink" href="#pynwn.creature.Creature.is_immortal" title="Permalink to this definition">¶</a></dt>
 <dd><p>Immortal flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.is_pc">
-<tt class="descname">is_pc</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.is_pc" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.is_pc">
+<tt class="descname">is_pc</tt><a class="headerlink" href="#pynwn.creature.Creature.is_pc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Player character flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.items">
-<tt class="descname">items</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.items" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.items">
+<tt class="descname">items</tt><a class="headerlink" href="#pynwn.creature.Creature.items" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creature&#8217;s inventory items.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -389,105 +435,93 @@ fields one finds in BICs</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.lawchaos">
-<tt class="descname">lawchaos</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.lawchaos" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.lawchaos">
+<tt class="descname">lawchaos</tt><a class="headerlink" href="#pynwn.creature.Creature.lawchaos" title="Permalink to this definition">¶</a></dt>
 <dd><p>Lawful - Chaotic</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.lootable">
-<tt class="descname">lootable</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.lootable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.lootable">
+<tt class="descname">lootable</tt><a class="headerlink" href="#pynwn.creature.Creature.lootable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Lootable.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.name_first">
-<tt class="descname">name_first</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.name_first" title="Permalink to this definition">¶</a></dt>
-<dd><p>Localized first name.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.name_last">
-<tt class="descname">name_last</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.name_last" title="Permalink to this definition">¶</a></dt>
-<dd><p>Localized last name.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.natural_ac">
-<tt class="descname">natural_ac</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.natural_ac" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.natural_ac">
+<tt class="descname">natural_ac</tt><a class="headerlink" href="#pynwn.creature.Creature.natural_ac" title="Permalink to this definition">¶</a></dt>
 <dd><p>Natural AC.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.no_perm_death">
-<tt class="descname">no_perm_death</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.no_perm_death" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.no_perm_death">
+<tt class="descname">no_perm_death</tt><a class="headerlink" href="#pynwn.creature.Creature.no_perm_death" title="Permalink to this definition">¶</a></dt>
 <dd><p>No permenant death flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.palette_id">
-<tt class="descname">palette_id</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.palette_id" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.palette_id">
+<tt class="descname">palette_id</tt><a class="headerlink" href="#pynwn.creature.Creature.palette_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Palette ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.perception_range">
-<tt class="descname">perception_range</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.perception_range" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.perception_range">
+<tt class="descname">perception_range</tt><a class="headerlink" href="#pynwn.creature.Creature.perception_range" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perception Range.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.phenotype">
-<tt class="descname">phenotype</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.phenotype" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.phenotype">
+<tt class="descname">phenotype</tt><a class="headerlink" href="#pynwn.creature.Creature.phenotype" title="Permalink to this definition">¶</a></dt>
 <dd><p>Phenotype ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.portrait_id">
-<tt class="descname">portrait_id</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.portrait_id" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.portrait_id">
+<tt class="descname">portrait_id</tt><a class="headerlink" href="#pynwn.creature.Creature.portrait_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Portrait ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.race">
-<tt class="descname">race</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.race" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.race">
+<tt class="descname">race</tt><a class="headerlink" href="#pynwn.creature.Creature.race" title="Permalink to this definition">¶</a></dt>
 <dd><p>Racial Type</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.resref">
-<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.resref" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.creature.Creature.resref" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resref.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="pynwn.obj.creature.Creature.save">
-<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.obj.creature.Creature.save" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.creature.Creature.save" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.save_fortitude">
-<tt class="descname">save_fortitude</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.save_fortitude" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.save_fortitude">
+<tt class="descname">save_fortitude</tt><a class="headerlink" href="#pynwn.creature.Creature.save_fortitude" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fortitude saving throw.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.save_reflex">
-<tt class="descname">save_reflex</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.save_reflex" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.save_reflex">
+<tt class="descname">save_reflex</tt><a class="headerlink" href="#pynwn.creature.Creature.save_reflex" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reflex saving throw.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.save_will">
-<tt class="descname">save_will</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.save_will" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.save_will">
+<tt class="descname">save_will</tt><a class="headerlink" href="#pynwn.creature.Creature.save_will" title="Permalink to this definition">¶</a></dt>
 <dd><p>Will saving throw.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.scripts">
-<tt class="descname">scripts</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.scripts" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.scripts">
+<tt class="descname">scripts</tt><a class="headerlink" href="#pynwn.creature.Creature.scripts" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creature&#8217;s scripts.  Responds to script events:</p>
-<ol class="arabic simple">
+<ul class="simple">
 <li>Event.HEARTBEAT</li>
 <li>Event.PERCEPTION</li>
 <li>Event.SPELL_CAST_AT</li>
@@ -501,12 +535,30 @@ fields one finds in BICs</p>
 <li>Event.DEATH</li>
 <li>Event.USER_DEFINED</li>
 <li>Event.BLOCKED</li>
-</ol>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.creature.Creature.set_description">
+<tt class="descname">set_description</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.creature.Creature.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.creature.Creature.set_name_first">
+<tt class="descname">set_name_first</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.creature.Creature.set_name_first" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized first name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.creature.Creature.set_name_last">
+<tt class="descname">set_name_last</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.creature.Creature.set_name_last" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized last name</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.skills">
-<tt class="descname">skills</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.skills" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.skills">
+<tt class="descname">skills</tt><a class="headerlink" href="#pynwn.creature.Creature.skills" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creature&#8217;s skills</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -519,55 +571,55 @@ fields one finds in BICs</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.special_abilities">
-<tt class="descname">special_abilities</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.special_abilities" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.special_abilities">
+<tt class="descname">special_abilities</tt><a class="headerlink" href="#pynwn.creature.Creature.special_abilities" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.starting_package">
-<tt class="descname">starting_package</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.starting_package" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.starting_package">
+<tt class="descname">starting_package</tt><a class="headerlink" href="#pynwn.creature.Creature.starting_package" title="Permalink to this definition">¶</a></dt>
 <dd><p>Starting package ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.strength">
-<tt class="descname">strength</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.strength" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.strength">
+<tt class="descname">strength</tt><a class="headerlink" href="#pynwn.creature.Creature.strength" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creature&#8217;s strength.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.subrace">
-<tt class="descname">subrace</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.subrace" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.subrace">
+<tt class="descname">subrace</tt><a class="headerlink" href="#pynwn.creature.Creature.subrace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Subrace.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.tag">
-<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.tag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.creature.Creature.tag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tag</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.tail">
-<tt class="descname">tail</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.tail" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.tail">
+<tt class="descname">tail</tt><a class="headerlink" href="#pynwn.creature.Creature.tail" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tail ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.walkrate">
-<tt class="descname">walkrate</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.walkrate" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.walkrate">
+<tt class="descname">walkrate</tt><a class="headerlink" href="#pynwn.creature.Creature.walkrate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Walkrate.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.wings">
-<tt class="descname">wings</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.wings" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.wings">
+<tt class="descname">wings</tt><a class="headerlink" href="#pynwn.creature.Creature.wings" title="Permalink to this definition">¶</a></dt>
 <dd><p>Wings ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.creature.Creature.wisdom">
-<tt class="descname">wisdom</tt><a class="headerlink" href="#pynwn.obj.creature.Creature.wisdom" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.Creature.wisdom">
+<tt class="descname">wisdom</tt><a class="headerlink" href="#pynwn.creature.Creature.wisdom" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creature&#8217;s wisdom.</p>
 </dd></dl>
 
@@ -577,8 +629,8 @@ fields one finds in BICs</p>
 <div class="section" id="creatureinstance">
 <h2>CreatureInstance<a class="headerlink" href="#creatureinstance" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.creature.CreatureInstance">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.creature.</tt><tt class="descname">CreatureInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.obj.creature.CreatureInstance" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.creature.CreatureInstance">
+<em class="property">class </em><tt class="descclassname">pynwn.creature.</tt><tt class="descname">CreatureInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.creature.CreatureInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>A creature instance is one placed in an area in the toolset.
 As such it&#8217;s values are derived from its parent GFF structure.</p>
 </dd></dl>
@@ -587,48 +639,48 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="dialog">
 <h2>Dialog<a class="headerlink" href="#dialog" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.dialog.Dialog">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.dialog.</tt><tt class="descname">Dialog</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.obj.dialog.Dialog" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.dialog.Dialog">
+<em class="property">class </em><tt class="descclassname">pynwn.dialog.</tt><tt class="descname">Dialog</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.dialog.Dialog" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="attribute">
-<dt id="pynwn.obj.dialog.Dialog.delay_entry">
-<tt class="descname">delay_entry</tt><a class="headerlink" href="#pynwn.obj.dialog.Dialog.delay_entry" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.dialog.Dialog.delay_entry">
+<tt class="descname">delay_entry</tt><a class="headerlink" href="#pynwn.dialog.Dialog.delay_entry" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.dialog.Dialog.entries">
-<tt class="descname">entries</tt><a class="headerlink" href="#pynwn.obj.dialog.Dialog.entries" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.dialog.Dialog.entries">
+<tt class="descname">entries</tt><a class="headerlink" href="#pynwn.dialog.Dialog.entries" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.dialog.Dialog.prevent_zoom">
-<tt class="descname">prevent_zoom</tt><a class="headerlink" href="#pynwn.obj.dialog.Dialog.prevent_zoom" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.dialog.Dialog.prevent_zoom">
+<tt class="descname">prevent_zoom</tt><a class="headerlink" href="#pynwn.dialog.Dialog.prevent_zoom" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.dialog.Dialog.replies">
-<tt class="descname">replies</tt><a class="headerlink" href="#pynwn.obj.dialog.Dialog.replies" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.dialog.Dialog.replies">
+<tt class="descname">replies</tt><a class="headerlink" href="#pynwn.dialog.Dialog.replies" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.dialog.Dialog.script_abort">
-<tt class="descname">script_abort</tt><a class="headerlink" href="#pynwn.obj.dialog.Dialog.script_abort" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.dialog.Dialog.script_abort">
+<tt class="descname">script_abort</tt><a class="headerlink" href="#pynwn.dialog.Dialog.script_abort" title="Permalink to this definition">¶</a></dt>
 <dd><p>Conversation abort script</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.dialog.Dialog.script_end">
-<tt class="descname">script_end</tt><a class="headerlink" href="#pynwn.obj.dialog.Dialog.script_end" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.dialog.Dialog.script_end">
+<tt class="descname">script_end</tt><a class="headerlink" href="#pynwn.dialog.Dialog.script_end" title="Permalink to this definition">¶</a></dt>
 <dd><p>Conversation end script</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.dialog.Dialog.starts">
-<tt class="descname">starts</tt><a class="headerlink" href="#pynwn.obj.dialog.Dialog.starts" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.dialog.Dialog.starts">
+<tt class="descname">starts</tt><a class="headerlink" href="#pynwn.dialog.Dialog.starts" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.dialog.Dialog.word_count">
-<tt class="descname">word_count</tt><a class="headerlink" href="#pynwn.obj.dialog.Dialog.word_count" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.dialog.Dialog.word_count">
+<tt class="descname">word_count</tt><a class="headerlink" href="#pynwn.dialog.Dialog.word_count" title="Permalink to this definition">¶</a></dt>
 <dd><p>Conversation word count.</p>
 </dd></dl>
 
@@ -638,184 +690,190 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="door">
 <h2>Door<a class="headerlink" href="#door" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.door.Door">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.door.</tt><tt class="descname">Door</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.obj.door.Door" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door">
+<em class="property">class </em><tt class="descclassname">pynwn.door.</tt><tt class="descname">Door</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.door.Door" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="attribute">
-<dt id="pynwn.obj.door.Door.animation_state">
-<tt class="descname">animation_state</tt><a class="headerlink" href="#pynwn.obj.door.Door.animation_state" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.animation_state">
+<tt class="descname">animation_state</tt><a class="headerlink" href="#pynwn.door.Door.animation_state" title="Permalink to this definition">¶</a></dt>
 <dd><p>Animation State.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.appearance">
-<tt class="descname">appearance</tt><a class="headerlink" href="#pynwn.obj.door.Door.appearance" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.appearance">
+<tt class="descname">appearance</tt><a class="headerlink" href="#pynwn.door.Door.appearance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Appearance ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.comment">
-<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.obj.door.Door.comment" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.door.Door.comment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Comment.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.conversation">
-<tt class="descname">conversation</tt><a class="headerlink" href="#pynwn.obj.door.Door.conversation" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.conversation">
+<tt class="descname">conversation</tt><a class="headerlink" href="#pynwn.door.Door.conversation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Conversation resref.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.description">
-<tt class="descname">description</tt><a class="headerlink" href="#pynwn.obj.door.Door.description" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.door.Door.faction">
-<tt class="descname">faction</tt><a class="headerlink" href="#pynwn.obj.door.Door.faction" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.faction">
+<tt class="descname">faction</tt><a class="headerlink" href="#pynwn.door.Door.faction" title="Permalink to this definition">¶</a></dt>
 <dd><p>Faction ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.generic_type">
-<tt class="descname">generic_type</tt><a class="headerlink" href="#pynwn.obj.door.Door.generic_type" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.generic_type">
+<tt class="descname">generic_type</tt><a class="headerlink" href="#pynwn.door.Door.generic_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generic type.</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.door.Door.get_description">
+<tt class="descname">get_description</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.door.Door.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.door.Door.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.door.Door.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.hardness">
-<tt class="descname">hardness</tt><a class="headerlink" href="#pynwn.obj.door.Door.hardness" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.hardness">
+<tt class="descname">hardness</tt><a class="headerlink" href="#pynwn.door.Door.hardness" title="Permalink to this definition">¶</a></dt>
 <dd><p>Hardness.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.hp">
-<tt class="descname">hp</tt><a class="headerlink" href="#pynwn.obj.door.Door.hp" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.hp">
+<tt class="descname">hp</tt><a class="headerlink" href="#pynwn.door.Door.hp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Maximum Hitpoints.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.hp_current">
-<tt class="descname">hp_current</tt><a class="headerlink" href="#pynwn.obj.door.Door.hp_current" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.hp_current">
+<tt class="descname">hp_current</tt><a class="headerlink" href="#pynwn.door.Door.hp_current" title="Permalink to this definition">¶</a></dt>
 <dd><p>Current Hitpoints.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.interruptable">
-<tt class="descname">interruptable</tt><a class="headerlink" href="#pynwn.obj.door.Door.interruptable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.interruptable">
+<tt class="descname">interruptable</tt><a class="headerlink" href="#pynwn.door.Door.interruptable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Conversation interruptable flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.key_auto_remove">
-<tt class="descname">key_auto_remove</tt><a class="headerlink" href="#pynwn.obj.door.Door.key_auto_remove" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.key_auto_remove">
+<tt class="descname">key_auto_remove</tt><a class="headerlink" href="#pynwn.door.Door.key_auto_remove" title="Permalink to this definition">¶</a></dt>
 <dd><p>Auto-remove key.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.key_required">
-<tt class="descname">key_required</tt><a class="headerlink" href="#pynwn.obj.door.Door.key_required" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.key_required">
+<tt class="descname">key_required</tt><a class="headerlink" href="#pynwn.door.Door.key_required" title="Permalink to this definition">¶</a></dt>
 <dd><p>Key required flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.key_tag">
-<tt class="descname">key_tag</tt><a class="headerlink" href="#pynwn.obj.door.Door.key_tag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.key_tag">
+<tt class="descname">key_tag</tt><a class="headerlink" href="#pynwn.door.Door.key_tag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Key tag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.linked_to">
-<tt class="descname">linked_to</tt><a class="headerlink" href="#pynwn.obj.door.Door.linked_to" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.linked_to">
+<tt class="descname">linked_to</tt><a class="headerlink" href="#pynwn.door.Door.linked_to" title="Permalink to this definition">¶</a></dt>
 <dd><p>Linked to tag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.linked_to_flags">
-<tt class="descname">linked_to_flags</tt><a class="headerlink" href="#pynwn.obj.door.Door.linked_to_flags" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.linked_to_flags">
+<tt class="descname">linked_to_flags</tt><a class="headerlink" href="#pynwn.door.Door.linked_to_flags" title="Permalink to this definition">¶</a></dt>
 <dd><p>Linked to flags.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.load_screen">
-<tt class="descname">load_screen</tt><a class="headerlink" href="#pynwn.obj.door.Door.load_screen" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.load_screen">
+<tt class="descname">load_screen</tt><a class="headerlink" href="#pynwn.door.Door.load_screen" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load screen ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.lock_close_dc">
-<tt class="descname">lock_close_dc</tt><a class="headerlink" href="#pynwn.obj.door.Door.lock_close_dc" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.lock_close_dc">
+<tt class="descname">lock_close_dc</tt><a class="headerlink" href="#pynwn.door.Door.lock_close_dc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Close lock DC.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.lock_open_dc">
-<tt class="descname">lock_open_dc</tt><a class="headerlink" href="#pynwn.obj.door.Door.lock_open_dc" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.lock_open_dc">
+<tt class="descname">lock_open_dc</tt><a class="headerlink" href="#pynwn.door.Door.lock_open_dc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Open lock DC.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.lockable">
-<tt class="descname">lockable</tt><a class="headerlink" href="#pynwn.obj.door.Door.lockable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.lockable">
+<tt class="descname">lockable</tt><a class="headerlink" href="#pynwn.door.Door.lockable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Lockable flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.locked">
-<tt class="descname">locked</tt><a class="headerlink" href="#pynwn.obj.door.Door.locked" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.locked">
+<tt class="descname">locked</tt><a class="headerlink" href="#pynwn.door.Door.locked" title="Permalink to this definition">¶</a></dt>
 <dd><p>Locked flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.name">
-<tt class="descname">name</tt><a class="headerlink" href="#pynwn.obj.door.Door.name" title="Permalink to this definition">¶</a></dt>
-<dd><p>Localized Name</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.door.Door.paletted_id">
-<tt class="descname">paletted_id</tt><a class="headerlink" href="#pynwn.obj.door.Door.paletted_id" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.paletted_id">
+<tt class="descname">paletted_id</tt><a class="headerlink" href="#pynwn.door.Door.paletted_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Palette ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.plot">
-<tt class="descname">plot</tt><a class="headerlink" href="#pynwn.obj.door.Door.plot" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.plot">
+<tt class="descname">plot</tt><a class="headerlink" href="#pynwn.door.Door.plot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.portrait_id">
-<tt class="descname">portrait_id</tt><a class="headerlink" href="#pynwn.obj.door.Door.portrait_id" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.portrait_id">
+<tt class="descname">portrait_id</tt><a class="headerlink" href="#pynwn.door.Door.portrait_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Portrait ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.resref">
-<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.obj.door.Door.resref" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.door.Door.resref" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resref.</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.door.Door.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.door.Door.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.save_fortitude">
-<tt class="descname">save_fortitude</tt><a class="headerlink" href="#pynwn.obj.door.Door.save_fortitude" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.save_fortitude">
+<tt class="descname">save_fortitude</tt><a class="headerlink" href="#pynwn.door.Door.save_fortitude" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fortitude Saving Throw.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.save_reflex">
-<tt class="descname">save_reflex</tt><a class="headerlink" href="#pynwn.obj.door.Door.save_reflex" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.save_reflex">
+<tt class="descname">save_reflex</tt><a class="headerlink" href="#pynwn.door.Door.save_reflex" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reflex Saving Throw.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.save_will">
-<tt class="descname">save_will</tt><a class="headerlink" href="#pynwn.obj.door.Door.save_will" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.save_will">
+<tt class="descname">save_will</tt><a class="headerlink" href="#pynwn.door.Door.save_will" title="Permalink to this definition">¶</a></dt>
 <dd><p>Will Saving Throw.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.script">
-<tt class="descname">script</tt><a class="headerlink" href="#pynwn.obj.door.Door.script" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.script">
+<tt class="descname">script</tt><a class="headerlink" href="#pynwn.door.Door.script" title="Permalink to this definition">¶</a></dt>
 <dd><p>Scripts: Door responds to the following script events:</p>
 <ol class="arabic simple">
 <li>Event.CLOSE</li>
@@ -835,51 +893,63 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 </ol>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.door.Door.set_description">
+<tt class="descname">set_description</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.door.Door.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.door.Door.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.door.Door.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.tag">
-<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.obj.door.Door.tag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.door.Door.tag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.trap_detect_dc">
-<tt class="descname">trap_detect_dc</tt><a class="headerlink" href="#pynwn.obj.door.Door.trap_detect_dc" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.trap_detect_dc">
+<tt class="descname">trap_detect_dc</tt><a class="headerlink" href="#pynwn.door.Door.trap_detect_dc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap detect DC.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.trap_detectable">
-<tt class="descname">trap_detectable</tt><a class="headerlink" href="#pynwn.obj.door.Door.trap_detectable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.trap_detectable">
+<tt class="descname">trap_detectable</tt><a class="headerlink" href="#pynwn.door.Door.trap_detectable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap detectable flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.trap_disarm_dc">
-<tt class="descname">trap_disarm_dc</tt><a class="headerlink" href="#pynwn.obj.door.Door.trap_disarm_dc" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.trap_disarm_dc">
+<tt class="descname">trap_disarm_dc</tt><a class="headerlink" href="#pynwn.door.Door.trap_disarm_dc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap disarm DC.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.trap_disarmable">
-<tt class="descname">trap_disarmable</tt><a class="headerlink" href="#pynwn.obj.door.Door.trap_disarmable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.trap_disarmable">
+<tt class="descname">trap_disarmable</tt><a class="headerlink" href="#pynwn.door.Door.trap_disarmable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap disarmable flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.trap_flag">
-<tt class="descname">trap_flag</tt><a class="headerlink" href="#pynwn.obj.door.Door.trap_flag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.trap_flag">
+<tt class="descname">trap_flag</tt><a class="headerlink" href="#pynwn.door.Door.trap_flag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.trap_one_shot">
-<tt class="descname">trap_one_shot</tt><a class="headerlink" href="#pynwn.obj.door.Door.trap_one_shot" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.trap_one_shot">
+<tt class="descname">trap_one_shot</tt><a class="headerlink" href="#pynwn.door.Door.trap_one_shot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap is one-shot.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.door.Door.trap_type">
-<tt class="descname">trap_type</tt><a class="headerlink" href="#pynwn.obj.door.Door.trap_type" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.Door.trap_type">
+<tt class="descname">trap_type</tt><a class="headerlink" href="#pynwn.door.Door.trap_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap type.</p>
 </dd></dl>
 
@@ -889,8 +959,8 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="doorinstance">
 <h2>DoorInstance<a class="headerlink" href="#doorinstance" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.door.DoorInstance">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.door.</tt><tt class="descname">DoorInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.obj.door.DoorInstance" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.door.DoorInstance">
+<em class="property">class </em><tt class="descclassname">pynwn.door.</tt><tt class="descname">DoorInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.door.DoorInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>A door instance is one placed in an area in the toolset.
 As such it&#8217;s values are derived from its parent GFF structure.</p>
 </dd></dl>
@@ -899,23 +969,23 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="encounter">
 <h2>Encounter<a class="headerlink" href="#encounter" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.encounter.Encounter">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.encounter.</tt><tt class="descname">Encounter</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.obj.encounter.Encounter" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter">
+<em class="property">class </em><tt class="descclassname">pynwn.encounter.</tt><tt class="descname">Encounter</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.encounter.Encounter" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.active">
-<tt class="descname">active</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.active" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.active">
+<tt class="descname">active</tt><a class="headerlink" href="#pynwn.encounter.Encounter.active" title="Permalink to this definition">¶</a></dt>
 <dd><p>Active flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.comment">
-<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.comment" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.encounter.Encounter.comment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Comment.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.creatures">
-<tt class="descname">creatures</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.creatures" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.creatures">
+<tt class="descname">creatures</tt><a class="headerlink" href="#pynwn.encounter.Encounter.creatures" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creatures in the encounter.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -928,80 +998,80 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.difficulty">
-<tt class="descname">difficulty</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.difficulty" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.difficulty">
+<tt class="descname">difficulty</tt><a class="headerlink" href="#pynwn.encounter.Encounter.difficulty" title="Permalink to this definition">¶</a></dt>
 <dd><p>Difficulty.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.difficulty_index">
-<tt class="descname">difficulty_index</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.difficulty_index" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.difficulty_index">
+<tt class="descname">difficulty_index</tt><a class="headerlink" href="#pynwn.encounter.Encounter.difficulty_index" title="Permalink to this definition">¶</a></dt>
 <dd><p>Difficulty Index.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.faction">
-<tt class="descname">faction</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.faction" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.faction">
+<tt class="descname">faction</tt><a class="headerlink" href="#pynwn.encounter.Encounter.faction" title="Permalink to this definition">¶</a></dt>
 <dd><p>Faction ID.</p>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.max_creatures">
-<tt class="descname">max_creatures</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.max_creatures" title="Permalink to this definition">¶</a></dt>
-<dd><p>Maximum creatures.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.name">
-<tt class="descname">name</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.name" title="Permalink to this definition">¶</a></dt>
+<dl class="method">
+<dt id="pynwn.encounter.Encounter.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.encounter.Encounter.get_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Localized name.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.palette_id">
-<tt class="descname">palette_id</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.palette_id" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.max_creatures">
+<tt class="descname">max_creatures</tt><a class="headerlink" href="#pynwn.encounter.Encounter.max_creatures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum creatures.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.encounter.Encounter.palette_id">
+<tt class="descname">palette_id</tt><a class="headerlink" href="#pynwn.encounter.Encounter.palette_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Palette ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.player_only">
-<tt class="descname">player_only</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.player_only" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.player_only">
+<tt class="descname">player_only</tt><a class="headerlink" href="#pynwn.encounter.Encounter.player_only" title="Permalink to this definition">¶</a></dt>
 <dd><p>Triggered by player only.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.rec_creatures">
-<tt class="descname">rec_creatures</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.rec_creatures" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.rec_creatures">
+<tt class="descname">rec_creatures</tt><a class="headerlink" href="#pynwn.encounter.Encounter.rec_creatures" title="Permalink to this definition">¶</a></dt>
 <dd><p>rec_creatures.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.reset">
-<tt class="descname">reset</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.reset" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.reset">
+<tt class="descname">reset</tt><a class="headerlink" href="#pynwn.encounter.Encounter.reset" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resets flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.reset_time">
-<tt class="descname">reset_time</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.reset_time" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.reset_time">
+<tt class="descname">reset_time</tt><a class="headerlink" href="#pynwn.encounter.Encounter.reset_time" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reset time.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.respawns">
-<tt class="descname">respawns</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.respawns" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.respawns">
+<tt class="descname">respawns</tt><a class="headerlink" href="#pynwn.encounter.Encounter.respawns" title="Permalink to this definition">¶</a></dt>
 <dd><p>Respawns.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.resref">
-<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.resref" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.encounter.Encounter.resref" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resref.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.scripts">
-<tt class="descname">scripts</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.scripts" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.scripts">
+<tt class="descname">scripts</tt><a class="headerlink" href="#pynwn.encounter.Encounter.scripts" title="Permalink to this definition">¶</a></dt>
 <dd><p>Scripts. Responts to script events:</p>
 <ul class="simple">
 <li>Event.ENTER</li>
@@ -1012,15 +1082,21 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 </ul>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.encounter.Encounter.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.encounter.Encounter.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.spawn_option">
-<tt class="descname">spawn_option</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.spawn_option" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.spawn_option">
+<tt class="descname">spawn_option</tt><a class="headerlink" href="#pynwn.encounter.Encounter.spawn_option" title="Permalink to this definition">¶</a></dt>
 <dd><p>Spawn option.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.encounter.Encounter.tag">
-<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.obj.encounter.Encounter.tag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.Encounter.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.encounter.Encounter.tag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tag.</p>
 </dd></dl>
 
@@ -1030,8 +1106,8 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="encounterinstance">
 <h2>EncounterInstance<a class="headerlink" href="#encounterinstance" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.encounter.EncounterInstance">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.encounter.</tt><tt class="descname">EncounterInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.obj.encounter.EncounterInstance" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.encounter.EncounterInstance">
+<em class="property">class </em><tt class="descclassname">pynwn.encounter.</tt><tt class="descname">EncounterInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.encounter.EncounterInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>A encounter instance is one placed in an area in the toolset.
 As such it&#8217;s values are derived from its parent GFF structure.</p>
 </dd></dl>
@@ -1040,16 +1116,16 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="faction">
 <h2>Faction<a class="headerlink" href="#faction" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.faction.Faction">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.faction.</tt><tt class="descname">Faction</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.obj.faction.Faction" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.faction.Faction">
+<em class="property">class </em><tt class="descclassname">pynwn.faction.</tt><tt class="descname">Faction</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.faction.Faction" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="attribute">
-<dt id="pynwn.obj.faction.Faction.factions">
-<tt class="descname">factions</tt><a class="headerlink" href="#pynwn.obj.faction.Faction.factions" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.faction.Faction.factions">
+<tt class="descname">factions</tt><a class="headerlink" href="#pynwn.faction.Faction.factions" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.faction.Faction.reputations">
-<tt class="descname">reputations</tt><a class="headerlink" href="#pynwn.obj.faction.Faction.reputations" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.faction.Faction.reputations">
+<tt class="descname">reputations</tt><a class="headerlink" href="#pynwn.faction.Faction.reputations" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1058,88 +1134,88 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="item">
 <h2>Item<a class="headerlink" href="#item" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.item.Item">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.item.</tt><tt class="descname">Item</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.obj.item.Item" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.Item">
+<em class="property">class </em><tt class="descclassname">pynwn.item.</tt><tt class="descname">Item</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.item.Item" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="attribute">
-<dt id="pynwn.obj.item.Item.base_type">
-<tt class="descname">base_type</tt><a class="headerlink" href="#pynwn.obj.item.Item.base_type" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.Item.base_type">
+<tt class="descname">base_type</tt><a class="headerlink" href="#pynwn.item.Item.base_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Base item ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.item.Item.charges">
-<tt class="descname">charges</tt><a class="headerlink" href="#pynwn.obj.item.Item.charges" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.Item.charges">
+<tt class="descname">charges</tt><a class="headerlink" href="#pynwn.item.Item.charges" title="Permalink to this definition">¶</a></dt>
 <dd><p>Charges.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.item.Item.comment">
-<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.obj.item.Item.comment" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.Item.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.item.Item.comment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Comment.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.item.Item.cost">
-<tt class="descname">cost</tt><a class="headerlink" href="#pynwn.obj.item.Item.cost" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.Item.cost">
+<tt class="descname">cost</tt><a class="headerlink" href="#pynwn.item.Item.cost" title="Permalink to this definition">¶</a></dt>
 <dd><p>Cost.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.item.Item.cost_additional">
-<tt class="descname">cost_additional</tt><a class="headerlink" href="#pynwn.obj.item.Item.cost_additional" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.Item.cost_additional">
+<tt class="descname">cost_additional</tt><a class="headerlink" href="#pynwn.item.Item.cost_additional" title="Permalink to this definition">¶</a></dt>
 <dd><p>Additional Cost.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.item.Item.cursed">
-<tt class="descname">cursed</tt><a class="headerlink" href="#pynwn.obj.item.Item.cursed" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.Item.cursed">
+<tt class="descname">cursed</tt><a class="headerlink" href="#pynwn.item.Item.cursed" title="Permalink to this definition">¶</a></dt>
 <dd><p>Cursed flag.</p>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="pynwn.obj.item.Item.description">
-<tt class="descname">description</tt><a class="headerlink" href="#pynwn.obj.item.Item.description" title="Permalink to this definition">¶</a></dt>
+<dl class="method">
+<dt id="pynwn.item.Item.get_description">
+<tt class="descname">get_description</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.item.Item.get_description" title="Permalink to this definition">¶</a></dt>
 <dd><p>Localized unidentified description.</p>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="pynwn.obj.item.Item.description_id">
-<tt class="descname">description_id</tt><a class="headerlink" href="#pynwn.obj.item.Item.description_id" title="Permalink to this definition">¶</a></dt>
+<dl class="method">
+<dt id="pynwn.item.Item.get_description_id">
+<tt class="descname">get_description_id</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.item.Item.get_description_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Localized identified description.</p>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="pynwn.obj.item.Item.identified">
-<tt class="descname">identified</tt><a class="headerlink" href="#pynwn.obj.item.Item.identified" title="Permalink to this definition">¶</a></dt>
-<dd><p>Identified flag.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.item.Item.model">
-<tt class="descname">model</tt><a class="headerlink" href="#pynwn.obj.item.Item.model" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.item.Item.name">
-<tt class="descname">name</tt><a class="headerlink" href="#pynwn.obj.item.Item.name" title="Permalink to this definition">¶</a></dt>
+<dl class="method">
+<dt id="pynwn.item.Item.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.item.Item.get_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Localized name.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.item.Item.palette_id">
-<tt class="descname">palette_id</tt><a class="headerlink" href="#pynwn.obj.item.Item.palette_id" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.Item.identified">
+<tt class="descname">identified</tt><a class="headerlink" href="#pynwn.item.Item.identified" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identified flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.model">
+<tt class="descname">model</tt><a class="headerlink" href="#pynwn.item.Item.model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.palette_id">
+<tt class="descname">palette_id</tt><a class="headerlink" href="#pynwn.item.Item.palette_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Palette ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.item.Item.plot">
-<tt class="descname">plot</tt><a class="headerlink" href="#pynwn.obj.item.Item.plot" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.Item.plot">
+<tt class="descname">plot</tt><a class="headerlink" href="#pynwn.item.Item.plot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.item.Item.properties">
-<tt class="descname">properties</tt><a class="headerlink" href="#pynwn.obj.item.Item.properties" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.Item.properties">
+<tt class="descname">properties</tt><a class="headerlink" href="#pynwn.item.Item.properties" title="Permalink to this definition">¶</a></dt>
 <dd><p>Item properties</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -1152,26 +1228,49 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.item.Item.resref">
-<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.obj.item.Item.resref" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.Item.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.item.Item.resref" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resref.</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.item.Item.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.item.Item.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pynwn.item.Item.set_description">
+<tt class="descname">set_description</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.item.Item.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized unidentified description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.item.Item.set_description_id">
+<tt class="descname">set_description_id</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.item.Item.set_description_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized identified description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.item.Item.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.item.Item.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.item.Item.stack_size">
-<tt class="descname">stack_size</tt><a class="headerlink" href="#pynwn.obj.item.Item.stack_size" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.Item.stack_size">
+<tt class="descname">stack_size</tt><a class="headerlink" href="#pynwn.item.Item.stack_size" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stack size.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.item.Item.stolen">
-<tt class="descname">stolen</tt><a class="headerlink" href="#pynwn.obj.item.Item.stolen" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.Item.stolen">
+<tt class="descname">stolen</tt><a class="headerlink" href="#pynwn.item.Item.stolen" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stolen flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.item.Item.tag">
-<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.obj.item.Item.tag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.Item.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.item.Item.tag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tag.</p>
 </dd></dl>
 
@@ -1181,22 +1280,112 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="iteminstance">
 <h2>ItemInstance<a class="headerlink" href="#iteminstance" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.item.ItemInstance">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.item.</tt><tt class="descname">ItemInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.obj.item.ItemInstance" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.item.ItemInstance">
+<em class="property">class </em><tt class="descclassname">pynwn.item.</tt><tt class="descname">ItemInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.item.ItemInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>A item instance is one placed in an area in the toolset.
 As such it&#8217;s values are derived from its parent GFF structure.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="itemproperty">
+<h2>ItemProperty<a class="headerlink" href="#itemproperty" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pynwn.item.ItemProperty">
+<em class="property">class </em><tt class="descclassname">pynwn.item.</tt><tt class="descname">ItemProperty</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.item.ItemProperty" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="pynwn.item.ItemProperty.chance">
+<tt class="descname">chance</tt><a class="headerlink" href="#pynwn.item.ItemProperty.chance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Appearance chance.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.ItemProperty.cost_table">
+<tt class="descname">cost_table</tt><a class="headerlink" href="#pynwn.item.ItemProperty.cost_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cost table.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.ItemProperty.cost_value">
+<tt class="descname">cost_value</tt><a class="headerlink" href="#pynwn.item.ItemProperty.cost_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cost value.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.ItemProperty.param_table">
+<tt class="descname">param_table</tt><a class="headerlink" href="#pynwn.item.ItemProperty.param_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parameter table.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.ItemProperty.param_value">
+<tt class="descname">param_value</tt><a class="headerlink" href="#pynwn.item.ItemProperty.param_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parameter value.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.ItemProperty.subtype">
+<tt class="descname">subtype</tt><a class="headerlink" href="#pynwn.item.ItemProperty.subtype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subtype.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.ItemProperty.type">
+<tt class="descname">type</tt><a class="headerlink" href="#pynwn.item.ItemProperty.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Type.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="repositoryitem">
+<h2>RepositoryItem<a class="headerlink" href="#repositoryitem" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pynwn.item.RepositoryItem">
+<em class="property">class </em><tt class="descclassname">pynwn.item.</tt><tt class="descname">RepositoryItem</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.item.RepositoryItem" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="pynwn.item.RepositoryItem.dropable">
+<tt class="descname">dropable</tt><a class="headerlink" href="#pynwn.item.RepositoryItem.dropable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dropable flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.RepositoryItem.infinite">
+<tt class="descname">infinite</tt><a class="headerlink" href="#pynwn.item.RepositoryItem.infinite" title="Permalink to this definition">¶</a></dt>
+<dd><p>Infinite flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.RepositoryItem.position">
+<tt class="descname">position</tt><a class="headerlink" href="#pynwn.item.RepositoryItem.position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position in inventory</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Tuple of x and y coordinates.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.RepositoryItem.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.item.RepositoryItem.resref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resref.</p>
+</dd></dl>
+
 </dd></dl>
 
 </div>
 <div class="section" id="journal">
 <h2>Journal<a class="headerlink" href="#journal" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.journal.Journal">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.journal.</tt><tt class="descname">Journal</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.obj.journal.Journal" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.journal.Journal">
+<em class="property">class </em><tt class="descclassname">pynwn.journal.</tt><tt class="descname">Journal</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.journal.Journal" title="Permalink to this definition">¶</a></dt>
 <dd><p>There is only one journal file.</p>
 <dl class="attribute">
-<dt id="pynwn.obj.journal.Journal.quests">
-<tt class="descname">quests</tt><a class="headerlink" href="#pynwn.obj.journal.Journal.quests" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.journal.Journal.quests">
+<tt class="descname">quests</tt><a class="headerlink" href="#pynwn.journal.Journal.quests" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1205,13 +1394,13 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="module">
 <h2>Module<a class="headerlink" href="#module" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.module.Module">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.module.</tt><tt class="descname">Module</tt><big>(</big><em>module</em><big>)</big><a class="headerlink" href="#pynwn.obj.module.Module" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.module.Module">
+<em class="property">class </em><tt class="descclassname">pynwn.module.</tt><tt class="descname">Module</tt><big>(</big><em>module</em><big>)</big><a class="headerlink" href="#pynwn.module.Module" title="Permalink to this definition">¶</a></dt>
 <dd><p>Module abstracts over MOD ERF files and directories containing the contents of
 MOD files.</p>
 <dl class="attribute">
-<dt id="pynwn.obj.module.Module.areas">
-<tt class="descname">areas</tt><a class="headerlink" href="#pynwn.obj.module.Module.areas" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.module.Module.areas">
+<tt class="descname">areas</tt><a class="headerlink" href="#pynwn.module.Module.areas" title="Permalink to this definition">¶</a></dt>
 <dd><p>Areas.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -1224,20 +1413,14 @@ MOD files.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.module.Module.description">
-<tt class="descname">description</tt><a class="headerlink" href="#pynwn.obj.module.Module.description" title="Permalink to this definition">¶</a></dt>
-<dd><p>Localized description</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.module.Module.entry_area">
-<tt class="descname">entry_area</tt><a class="headerlink" href="#pynwn.obj.module.Module.entry_area" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.module.Module.entry_area">
+<tt class="descname">entry_area</tt><a class="headerlink" href="#pynwn.module.Module.entry_area" title="Permalink to this definition">¶</a></dt>
 <dd><p>Entry area resref</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.module.Module.entry_location">
-<tt class="descname">entry_location</tt><a class="headerlink" href="#pynwn.obj.module.Module.entry_location" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.module.Module.entry_location">
+<tt class="descname">entry_location</tt><a class="headerlink" href="#pynwn.module.Module.entry_location" title="Permalink to this definition">¶</a></dt>
 <dd><p>Entry location.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -1250,37 +1433,43 @@ MOD files.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.module.Module.expansion_pack">
-<tt class="descname">expansion_pack</tt><a class="headerlink" href="#pynwn.obj.module.Module.expansion_pack" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.module.Module.expansion_pack">
+<tt class="descname">expansion_pack</tt><a class="headerlink" href="#pynwn.module.Module.expansion_pack" title="Permalink to this definition">¶</a></dt>
 <dd><p>Expansion pack.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.module.Module.game_version">
-<tt class="descname">game_version</tt><a class="headerlink" href="#pynwn.obj.module.Module.game_version" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.module.Module.game_version">
+<tt class="descname">game_version</tt><a class="headerlink" href="#pynwn.module.Module.game_version" title="Permalink to this definition">¶</a></dt>
 <dd><p>Game version</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.module.Module.get_description">
+<tt class="descname">get_description</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.module.Module.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.module.Module.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.module.Module.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.module.Module.haks">
-<tt class="descname">haks</tt><a class="headerlink" href="#pynwn.obj.module.Module.haks" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.module.Module.haks">
+<tt class="descname">haks</tt><a class="headerlink" href="#pynwn.module.Module.haks" title="Permalink to this definition">¶</a></dt>
 <dd><p>List of HAK files.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.module.Module.name">
-<tt class="descname">name</tt><a class="headerlink" href="#pynwn.obj.module.Module.name" title="Permalink to this definition">¶</a></dt>
-<dd><p>Localized name</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.module.Module.placeables">
-<tt class="descname">placeables</tt><a class="headerlink" href="#pynwn.obj.module.Module.placeables" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.module.Module.placeables">
+<tt class="descname">placeables</tt><a class="headerlink" href="#pynwn.module.Module.placeables" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.module.Module.script">
-<tt class="descname">script</tt><a class="headerlink" href="#pynwn.obj.module.Module.script" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.module.Module.script">
+<tt class="descname">script</tt><a class="headerlink" href="#pynwn.module.Module.script" title="Permalink to this definition">¶</a></dt>
 <dd><p>Scripts.  Responds to script events:</p>
 <ol class="arabic simple">
 <li>Event.CUTSCENE_ABORT</li>
@@ -1302,15 +1491,27 @@ MOD files.</p>
 </ol>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.module.Module.set_description">
+<tt class="descname">set_description</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.module.Module.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.module.Module.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.module.Module.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.module.Module.tlk">
-<tt class="descname">tlk</tt><a class="headerlink" href="#pynwn.obj.module.Module.tlk" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.module.Module.tlk">
+<tt class="descname">tlk</tt><a class="headerlink" href="#pynwn.module.Module.tlk" title="Permalink to this definition">¶</a></dt>
 <dd><p>Custom TLK file.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.module.Module.xp_scale">
-<tt class="descname">xp_scale</tt><a class="headerlink" href="#pynwn.obj.module.Module.xp_scale" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.module.Module.xp_scale">
+<tt class="descname">xp_scale</tt><a class="headerlink" href="#pynwn.module.Module.xp_scale" title="Permalink to this definition">¶</a></dt>
 <dd><p>Experience point scale.</p>
 </dd></dl>
 
@@ -1320,12 +1521,12 @@ MOD files.</p>
 <div class="section" id="palette">
 <h2>Palette<a class="headerlink" href="#palette" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.palette.Palette">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.palette.</tt><tt class="descname">Palette</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.obj.palette.Palette" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.palette.Palette">
+<em class="property">class </em><tt class="descclassname">pynwn.palette.</tt><tt class="descname">Palette</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.palette.Palette" title="Permalink to this definition">¶</a></dt>
 <dd><p>This is a very rough absraction over ITPs.</p>
 <dl class="attribute">
-<dt id="pynwn.obj.palette.Palette.nodes">
-<tt class="descname">nodes</tt><a class="headerlink" href="#pynwn.obj.palette.Palette.nodes" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.palette.Palette.nodes">
+<tt class="descname">nodes</tt><a class="headerlink" href="#pynwn.palette.Palette.nodes" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1334,83 +1535,89 @@ MOD files.</p>
 <div class="section" id="placeable">
 <h2>Placeable<a class="headerlink" href="#placeable" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.placeable.Placeable">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.placeable.</tt><tt class="descname">Placeable</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em>, <em>instance_gff=None</em><big>)</big><a class="headerlink" href="#pynwn.obj.placeable.Placeable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable">
+<em class="property">class </em><tt class="descclassname">pynwn.placeable.</tt><tt class="descname">Placeable</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em>, <em>instance_gff=None</em><big>)</big><a class="headerlink" href="#pynwn.placeable.Placeable" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.animation_state">
-<tt class="descname">animation_state</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.animation_state" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.animation_state">
+<tt class="descname">animation_state</tt><a class="headerlink" href="#pynwn.placeable.Placeable.animation_state" title="Permalink to this definition">¶</a></dt>
 <dd><p>Animation State.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.appearance">
-<tt class="descname">appearance</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.appearance" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.appearance">
+<tt class="descname">appearance</tt><a class="headerlink" href="#pynwn.placeable.Placeable.appearance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Appearance ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.body_bag">
-<tt class="descname">body_bag</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.body_bag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.body_bag">
+<tt class="descname">body_bag</tt><a class="headerlink" href="#pynwn.placeable.Placeable.body_bag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Body bag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.comment">
-<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.comment" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.placeable.Placeable.comment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Comment.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.conversation">
-<tt class="descname">conversation</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.conversation" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.conversation">
+<tt class="descname">conversation</tt><a class="headerlink" href="#pynwn.placeable.Placeable.conversation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Conversation resref.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.description">
-<tt class="descname">description</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.description" title="Permalink to this definition">¶</a></dt>
-<dd><p>Localized description.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.faction">
-<tt class="descname">faction</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.faction" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.faction">
+<tt class="descname">faction</tt><a class="headerlink" href="#pynwn.placeable.Placeable.faction" title="Permalink to this definition">¶</a></dt>
 <dd><p>Faction ID.</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.placeable.Placeable.get_description">
+<tt class="descname">get_description</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.placeable.Placeable.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.placeable.Placeable.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.placeable.Placeable.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.hardness">
-<tt class="descname">hardness</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.hardness" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.hardness">
+<tt class="descname">hardness</tt><a class="headerlink" href="#pynwn.placeable.Placeable.hardness" title="Permalink to this definition">¶</a></dt>
 <dd><p>Hardness.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.has_inventory">
-<tt class="descname">has_inventory</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.has_inventory" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.has_inventory">
+<tt class="descname">has_inventory</tt><a class="headerlink" href="#pynwn.placeable.Placeable.has_inventory" title="Permalink to this definition">¶</a></dt>
 <dd><p>Has inventory flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.hp">
-<tt class="descname">hp</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.hp" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.hp">
+<tt class="descname">hp</tt><a class="headerlink" href="#pynwn.placeable.Placeable.hp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Maximum Hitpoints.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.hp_current">
-<tt class="descname">hp_current</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.hp_current" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.hp_current">
+<tt class="descname">hp_current</tt><a class="headerlink" href="#pynwn.placeable.Placeable.hp_current" title="Permalink to this definition">¶</a></dt>
 <dd><p>Current Hitpoints.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.interruptable">
-<tt class="descname">interruptable</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.interruptable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.interruptable">
+<tt class="descname">interruptable</tt><a class="headerlink" href="#pynwn.placeable.Placeable.interruptable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Conversation interruptable flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.items">
-<tt class="descname">items</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.items" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.items">
+<tt class="descname">items</tt><a class="headerlink" href="#pynwn.placeable.Placeable.items" title="Permalink to this definition">¶</a></dt>
 <dd><p>Invenory items.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -1424,103 +1631,97 @@ the object does not have an inventory.</td>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.key_auto_remove">
-<tt class="descname">key_auto_remove</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.key_auto_remove" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.key_auto_remove">
+<tt class="descname">key_auto_remove</tt><a class="headerlink" href="#pynwn.placeable.Placeable.key_auto_remove" title="Permalink to this definition">¶</a></dt>
 <dd><p>Auto-remove key.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.key_required">
-<tt class="descname">key_required</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.key_required" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.key_required">
+<tt class="descname">key_required</tt><a class="headerlink" href="#pynwn.placeable.Placeable.key_required" title="Permalink to this definition">¶</a></dt>
 <dd><p>Key required flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.key_tag">
-<tt class="descname">key_tag</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.key_tag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.key_tag">
+<tt class="descname">key_tag</tt><a class="headerlink" href="#pynwn.placeable.Placeable.key_tag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Key tag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.lock_close_dc">
-<tt class="descname">lock_close_dc</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.lock_close_dc" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.lock_close_dc">
+<tt class="descname">lock_close_dc</tt><a class="headerlink" href="#pynwn.placeable.Placeable.lock_close_dc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Close lock DC.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.lock_open_dc">
-<tt class="descname">lock_open_dc</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.lock_open_dc" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.lock_open_dc">
+<tt class="descname">lock_open_dc</tt><a class="headerlink" href="#pynwn.placeable.Placeable.lock_open_dc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Open lock DC.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.lockable">
-<tt class="descname">lockable</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.lockable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.lockable">
+<tt class="descname">lockable</tt><a class="headerlink" href="#pynwn.placeable.Placeable.lockable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Lockable flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.locked">
-<tt class="descname">locked</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.locked" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.locked">
+<tt class="descname">locked</tt><a class="headerlink" href="#pynwn.placeable.Placeable.locked" title="Permalink to this definition">¶</a></dt>
 <dd><p>Locked flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.name">
-<tt class="descname">name</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.name" title="Permalink to this definition">¶</a></dt>
-<dd><p>Localized name</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.paletted_id">
-<tt class="descname">paletted_id</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.paletted_id" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.paletted_id">
+<tt class="descname">paletted_id</tt><a class="headerlink" href="#pynwn.placeable.Placeable.paletted_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Palette ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.plot">
-<tt class="descname">plot</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.plot" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.plot">
+<tt class="descname">plot</tt><a class="headerlink" href="#pynwn.placeable.Placeable.plot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.portrait_id">
-<tt class="descname">portrait_id</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.portrait_id" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.portrait_id">
+<tt class="descname">portrait_id</tt><a class="headerlink" href="#pynwn.placeable.Placeable.portrait_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Portrait ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.resref">
-<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.resref" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.placeable.Placeable.resref" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resref.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="pynwn.obj.placeable.Placeable.save">
-<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.obj.placeable.Placeable.save" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.placeable.Placeable.save" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.save_fortitude">
-<tt class="descname">save_fortitude</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.save_fortitude" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.save_fortitude">
+<tt class="descname">save_fortitude</tt><a class="headerlink" href="#pynwn.placeable.Placeable.save_fortitude" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fortitude Saving Throw.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.save_reflex">
-<tt class="descname">save_reflex</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.save_reflex" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.save_reflex">
+<tt class="descname">save_reflex</tt><a class="headerlink" href="#pynwn.placeable.Placeable.save_reflex" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reflex Saving Throw.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.save_will">
-<tt class="descname">save_will</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.save_will" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.save_will">
+<tt class="descname">save_will</tt><a class="headerlink" href="#pynwn.placeable.Placeable.save_will" title="Permalink to this definition">¶</a></dt>
 <dd><p>Will Saving Throw.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.script">
-<tt class="descname">script</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.script" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.script">
+<tt class="descname">script</tt><a class="headerlink" href="#pynwn.placeable.Placeable.script" title="Permalink to this definition">¶</a></dt>
 <dd><p>Scripts.  Responds to script events:</p>
 <ol class="arabic simple">
 <li>Event.CLOSE</li>
@@ -1541,69 +1742,81 @@ the object does not have an inventory.</td>
 </ol>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.placeable.Placeable.set_description">
+<tt class="descname">set_description</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.placeable.Placeable.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.placeable.Placeable.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.placeable.Placeable.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.static">
-<tt class="descname">static</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.static" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.static">
+<tt class="descname">static</tt><a class="headerlink" href="#pynwn.placeable.Placeable.static" title="Permalink to this definition">¶</a></dt>
 <dd><p>Static flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.tag">
-<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.tag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.placeable.Placeable.tag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.trap_detect_dc">
-<tt class="descname">trap_detect_dc</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.trap_detect_dc" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.trap_detect_dc">
+<tt class="descname">trap_detect_dc</tt><a class="headerlink" href="#pynwn.placeable.Placeable.trap_detect_dc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap detect DC.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.trap_detectable">
-<tt class="descname">trap_detectable</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.trap_detectable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.trap_detectable">
+<tt class="descname">trap_detectable</tt><a class="headerlink" href="#pynwn.placeable.Placeable.trap_detectable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap detectable flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.trap_disarm_dc">
-<tt class="descname">trap_disarm_dc</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.trap_disarm_dc" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.trap_disarm_dc">
+<tt class="descname">trap_disarm_dc</tt><a class="headerlink" href="#pynwn.placeable.Placeable.trap_disarm_dc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap disarm DC.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.trap_disarmable">
-<tt class="descname">trap_disarmable</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.trap_disarmable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.trap_disarmable">
+<tt class="descname">trap_disarmable</tt><a class="headerlink" href="#pynwn.placeable.Placeable.trap_disarmable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap disarmable flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.trap_flag">
-<tt class="descname">trap_flag</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.trap_flag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.trap_flag">
+<tt class="descname">trap_flag</tt><a class="headerlink" href="#pynwn.placeable.Placeable.trap_flag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.trap_one_shot">
-<tt class="descname">trap_one_shot</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.trap_one_shot" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.trap_one_shot">
+<tt class="descname">trap_one_shot</tt><a class="headerlink" href="#pynwn.placeable.Placeable.trap_one_shot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap is one-shot.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.trap_type">
-<tt class="descname">trap_type</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.trap_type" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.trap_type">
+<tt class="descname">trap_type</tt><a class="headerlink" href="#pynwn.placeable.Placeable.trap_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap type.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.type">
-<tt class="descname">type</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.type" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.type">
+<tt class="descname">type</tt><a class="headerlink" href="#pynwn.placeable.Placeable.type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Type.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.placeable.Placeable.useable">
-<tt class="descname">useable</tt><a class="headerlink" href="#pynwn.obj.placeable.Placeable.useable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.Placeable.useable">
+<tt class="descname">useable</tt><a class="headerlink" href="#pynwn.placeable.Placeable.useable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Useable flag.</p>
 </dd></dl>
 
@@ -1613,8 +1826,8 @@ the object does not have an inventory.</td>
 <div class="section" id="placeableinstance">
 <h2>PlaceableInstance<a class="headerlink" href="#placeableinstance" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.placeable.PlaceableInstance">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.placeable.</tt><tt class="descname">PlaceableInstance</tt><big>(</big><em>gff</em>, <em>orignal</em><big>)</big><a class="headerlink" href="#pynwn.obj.placeable.PlaceableInstance" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.placeable.PlaceableInstance">
+<em class="property">class </em><tt class="descclassname">pynwn.placeable.</tt><tt class="descname">PlaceableInstance</tt><big>(</big><em>gff</em>, <em>orignal</em><big>)</big><a class="headerlink" href="#pynwn.placeable.PlaceableInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>A placeable instance is one placed in an area in the toolset.
 As such it&#8217;s values are derived from its parent GFF structure.</p>
 </dd></dl>
@@ -1623,146 +1836,158 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="sound">
 <h2>Sound<a class="headerlink" href="#sound" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.sound.Sound">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.sound.</tt><tt class="descname">Sound</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.obj.sound.Sound" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound">
+<em class="property">class </em><tt class="descclassname">pynwn.sound.</tt><tt class="descname">Sound</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.sound.Sound" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.active">
-<tt class="descname">active</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.active" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.active">
+<tt class="descname">active</tt><a class="headerlink" href="#pynwn.sound.Sound.active" title="Permalink to this definition">¶</a></dt>
 <dd><p>Active flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.comment">
-<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.comment" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.sound.Sound.comment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Comment.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.continous">
-<tt class="descname">continous</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.continous" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.continous">
+<tt class="descname">continous</tt><a class="headerlink" href="#pynwn.sound.Sound.continous" title="Permalink to this definition">¶</a></dt>
 <dd><p>Continuous flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.distance_max">
-<tt class="descname">distance_max</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.distance_max" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.distance_max">
+<tt class="descname">distance_max</tt><a class="headerlink" href="#pynwn.sound.Sound.distance_max" title="Permalink to this definition">¶</a></dt>
 <dd><p>Maximum distance.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.distance_min">
-<tt class="descname">distance_min</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.distance_min" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.distance_min">
+<tt class="descname">distance_min</tt><a class="headerlink" href="#pynwn.sound.Sound.distance_min" title="Permalink to this definition">¶</a></dt>
 <dd><p>Minimum distance.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.elevation">
-<tt class="descname">elevation</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.elevation" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.elevation">
+<tt class="descname">elevation</tt><a class="headerlink" href="#pynwn.sound.Sound.elevation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Elevation.</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.sound.Sound.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.sound.Sound.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.hours">
-<tt class="descname">hours</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.hours" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.hours">
+<tt class="descname">hours</tt><a class="headerlink" href="#pynwn.sound.Sound.hours" title="Permalink to this definition">¶</a></dt>
 <dd><p>Hours.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.interval">
-<tt class="descname">interval</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.interval" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.interval">
+<tt class="descname">interval</tt><a class="headerlink" href="#pynwn.sound.Sound.interval" title="Permalink to this definition">¶</a></dt>
 <dd><p>Interval.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.interval_variation">
-<tt class="descname">interval_variation</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.interval_variation" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.interval_variation">
+<tt class="descname">interval_variation</tt><a class="headerlink" href="#pynwn.sound.Sound.interval_variation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Interval variation.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.looping">
-<tt class="descname">looping</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.looping" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.looping">
+<tt class="descname">looping</tt><a class="headerlink" href="#pynwn.sound.Sound.looping" title="Permalink to this definition">¶</a></dt>
 <dd><p>Looping flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.name">
-<tt class="descname">name</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.palette_id">
-<tt class="descname">palette_id</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.palette_id" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.palette_id">
+<tt class="descname">palette_id</tt><a class="headerlink" href="#pynwn.sound.Sound.palette_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Palette ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.pitch_variation">
-<tt class="descname">pitch_variation</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.pitch_variation" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.pitch_variation">
+<tt class="descname">pitch_variation</tt><a class="headerlink" href="#pynwn.sound.Sound.pitch_variation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Pitch variation.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.positional">
-<tt class="descname">positional</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.positional" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.positional">
+<tt class="descname">positional</tt><a class="headerlink" href="#pynwn.sound.Sound.positional" title="Permalink to this definition">¶</a></dt>
 <dd><p>Positional.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.priority">
-<tt class="descname">priority</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.priority" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.priority">
+<tt class="descname">priority</tt><a class="headerlink" href="#pynwn.sound.Sound.priority" title="Permalink to this definition">¶</a></dt>
 <dd><p>Priority.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.random">
-<tt class="descname">random</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.random" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.random">
+<tt class="descname">random</tt><a class="headerlink" href="#pynwn.sound.Sound.random" title="Permalink to this definition">¶</a></dt>
 <dd><p>Random.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.random_position">
-<tt class="descname">random_position</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.random_position" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.random_position">
+<tt class="descname">random_position</tt><a class="headerlink" href="#pynwn.sound.Sound.random_position" title="Permalink to this definition">¶</a></dt>
 <dd><p>Random position.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.random_range">
-<tt class="descname">random_range</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.random_range" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.random_range">
+<tt class="descname">random_range</tt><a class="headerlink" href="#pynwn.sound.Sound.random_range" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.resref">
-<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.resref" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.sound.Sound.resref" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resref.</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.sound.Sound.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.sound.Sound.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pynwn.sound.Sound.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.sound.Sound.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.sounds">
-<tt class="descname">sounds</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.sounds" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.sounds">
+<tt class="descname">sounds</tt><a class="headerlink" href="#pynwn.sound.Sound.sounds" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.tag">
-<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.tag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.sound.Sound.tag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.times">
-<tt class="descname">times</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.times" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.times">
+<tt class="descname">times</tt><a class="headerlink" href="#pynwn.sound.Sound.times" title="Permalink to this definition">¶</a></dt>
 <dd><p>Times.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.volume">
-<tt class="descname">volume</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.volume" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.volume">
+<tt class="descname">volume</tt><a class="headerlink" href="#pynwn.sound.Sound.volume" title="Permalink to this definition">¶</a></dt>
 <dd><p>Volume.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.sound.Sound.volume_variation">
-<tt class="descname">volume_variation</tt><a class="headerlink" href="#pynwn.obj.sound.Sound.volume_variation" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.Sound.volume_variation">
+<tt class="descname">volume_variation</tt><a class="headerlink" href="#pynwn.sound.Sound.volume_variation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Volume variation.</p>
 </dd></dl>
 
@@ -1772,8 +1997,8 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="soundinstance">
 <h2>SoundInstance<a class="headerlink" href="#soundinstance" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.sound.SoundInstance">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.sound.</tt><tt class="descname">SoundInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.obj.sound.SoundInstance" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.sound.SoundInstance">
+<em class="property">class </em><tt class="descclassname">pynwn.sound.</tt><tt class="descname">SoundInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.sound.SoundInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>A sound instance is one placed in an area in the toolset.
 As such it&#8217;s values are derived from its parent GFF structure.</p>
 </dd></dl>
@@ -1782,29 +2007,47 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="store">
 <h2>Store<a class="headerlink" href="#store" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.store.Store">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.store.</tt><tt class="descname">Store</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.obj.store.Store" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store">
+<em class="property">class </em><tt class="descclassname">pynwn.store.</tt><tt class="descname">Store</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.store.Store" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="attribute">
-<dt id="pynwn.obj.store.Store.black_market">
-<tt class="descname">black_market</tt><a class="headerlink" href="#pynwn.obj.store.Store.black_market" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.black_market">
+<tt class="descname">black_market</tt><a class="headerlink" href="#pynwn.store.Store.black_market" title="Permalink to this definition">¶</a></dt>
 <dd><p>Black market flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.store.Store.comment">
-<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.obj.store.Store.comment" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.store.Store.comment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Comment.</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.store.Store.get_description">
+<tt class="descname">get_description</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.store.Store.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized unidentified description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.store.Store.get_description_id">
+<tt class="descname">get_description_id</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.store.Store.get_description_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized identified description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.store.Store.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.store.Store.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.store.Store.gold">
-<tt class="descname">gold</tt><a class="headerlink" href="#pynwn.obj.store.Store.gold" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.gold">
+<tt class="descname">gold</tt><a class="headerlink" href="#pynwn.store.Store.gold" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gold.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.store.Store.items">
-<tt class="descname">items</tt><a class="headerlink" href="#pynwn.obj.store.Store.items" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.items">
+<tt class="descname">items</tt><a class="headerlink" href="#pynwn.store.Store.items" title="Permalink to this definition">¶</a></dt>
 <dd><p>Items in inventory.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -1818,56 +2061,55 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.store.Store.mark_down">
-<tt class="descname">mark_down</tt><a class="headerlink" href="#pynwn.obj.store.Store.mark_down" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.mark_down">
+<tt class="descname">mark_down</tt><a class="headerlink" href="#pynwn.store.Store.mark_down" title="Permalink to this definition">¶</a></dt>
 <dd><p>Mark down.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.store.Store.mark_down_bm">
-<tt class="descname">mark_down_bm</tt><a class="headerlink" href="#pynwn.obj.store.Store.mark_down_bm" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.mark_down_bm">
+<tt class="descname">mark_down_bm</tt><a class="headerlink" href="#pynwn.store.Store.mark_down_bm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Blackmarket mark down.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.store.Store.mark_up">
-<tt class="descname">mark_up</tt><a class="headerlink" href="#pynwn.obj.store.Store.mark_up" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.mark_up">
+<tt class="descname">mark_up</tt><a class="headerlink" href="#pynwn.store.Store.mark_up" title="Permalink to this definition">¶</a></dt>
 <dd><p>Mark up.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.store.Store.name">
-<tt class="descname">name</tt><a class="headerlink" href="#pynwn.obj.store.Store.name" title="Permalink to this definition">¶</a></dt>
-<dd><p>Localized name.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.store.Store.palette_id">
-<tt class="descname">palette_id</tt><a class="headerlink" href="#pynwn.obj.store.Store.palette_id" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.palette_id">
+<tt class="descname">palette_id</tt><a class="headerlink" href="#pynwn.store.Store.palette_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resref.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.store.Store.price_id">
-<tt class="descname">price_id</tt><a class="headerlink" href="#pynwn.obj.store.Store.price_id" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.price_id">
+<tt class="descname">price_id</tt><a class="headerlink" href="#pynwn.store.Store.price_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Price to identify item.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.store.Store.price_max_buy">
-<tt class="descname">price_max_buy</tt><a class="headerlink" href="#pynwn.obj.store.Store.price_max_buy" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.price_max_buy">
+<tt class="descname">price_max_buy</tt><a class="headerlink" href="#pynwn.store.Store.price_max_buy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Maximum buy price.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.store.Store.resref">
-<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.obj.store.Store.resref" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.store.Store.resref" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resref.</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.store.Store.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.store.Store.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.store.Store.script">
-<tt class="descname">script</tt><a class="headerlink" href="#pynwn.obj.store.Store.script" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.script">
+<tt class="descname">script</tt><a class="headerlink" href="#pynwn.store.Store.script" title="Permalink to this definition">¶</a></dt>
 <dd><p>Scripts.  Responds to script events:</p>
 <ol class="arabic simple">
 <li>Event.OPEN</li>
@@ -1875,15 +2117,33 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 </ol>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.store.Store.set_description">
+<tt class="descname">set_description</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.store.Store.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized unidentified description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.store.Store.set_description_id">
+<tt class="descname">set_description_id</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.store.Store.set_description_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized identified description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.store.Store.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.store.Store.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.store.Store.tag">
-<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.obj.store.Store.tag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.store.Store.tag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.store.Store.will_not_buy">
-<tt class="descname">will_not_buy</tt><a class="headerlink" href="#pynwn.obj.store.Store.will_not_buy" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.will_not_buy">
+<tt class="descname">will_not_buy</tt><a class="headerlink" href="#pynwn.store.Store.will_not_buy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Will not buy list.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -1896,8 +2156,8 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.store.Store.will_only_buy">
-<tt class="descname">will_only_buy</tt><a class="headerlink" href="#pynwn.obj.store.Store.will_only_buy" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.Store.will_only_buy">
+<tt class="descname">will_only_buy</tt><a class="headerlink" href="#pynwn.store.Store.will_only_buy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Will only buy list.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -1915,93 +2175,113 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="storeinstance">
 <h2>StoreInstance<a class="headerlink" href="#storeinstance" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.store.StoreInstance">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.store.</tt><tt class="descname">StoreInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.obj.store.StoreInstance" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.store.StoreInstance">
+<em class="property">class </em><tt class="descclassname">pynwn.store.</tt><tt class="descname">StoreInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.store.StoreInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>A store instance is one placed in an area in the toolset.
 As such it&#8217;s values are derived from its parent GFF structure.</p>
+<dl class="attribute">
+<dt id="pynwn.store.StoreInstance.items">
+<tt class="descname">items</tt><a class="headerlink" href="#pynwn.store.StoreInstance.items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Items in inventory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a two dimensional array with the format:
+[&lt;store page&gt;][&lt;ItemInstance objects&gt;]</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </dd></dl>
 
 </div>
 <div class="section" id="trigger">
 <h2>Trigger<a class="headerlink" href="#trigger" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.trigger.Trigger">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.trigger.</tt><tt class="descname">Trigger</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.obj.trigger.Trigger" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger">
+<em class="property">class </em><tt class="descclassname">pynwn.trigger.</tt><tt class="descname">Trigger</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.trigger.Trigger" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.comment">
-<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.comment" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.trigger.Trigger.comment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Comment.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.faction">
-<tt class="descname">faction</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.faction" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.faction">
+<tt class="descname">faction</tt><a class="headerlink" href="#pynwn.trigger.Trigger.faction" title="Permalink to this definition">¶</a></dt>
 <dd><p>Faction ID.</p>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.highlight_height">
-<tt class="descname">highlight_height</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.highlight_height" title="Permalink to this definition">¶</a></dt>
-<dd><p>Cursor.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.key_auto_remove">
-<tt class="descname">key_auto_remove</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.key_auto_remove" title="Permalink to this definition">¶</a></dt>
-<dd><p>Auto-remove key flag.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.key_tag">
-<tt class="descname">key_tag</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.key_tag" title="Permalink to this definition">¶</a></dt>
-<dd><p>Key tag.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.linked_to">
-<tt class="descname">linked_to</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.linked_to" title="Permalink to this definition">¶</a></dt>
-<dd><p>Linked to object tag.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.linked_to_flags">
-<tt class="descname">linked_to_flags</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.linked_to_flags" title="Permalink to this definition">¶</a></dt>
-<dd><p>Linked to flags.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.load_screen">
-<tt class="descname">load_screen</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.load_screen" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load screen ID.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.name">
-<tt class="descname">name</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.name" title="Permalink to this definition">¶</a></dt>
+<dl class="method">
+<dt id="pynwn.trigger.Trigger.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.trigger.Trigger.get_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Localized name.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.paletted_id">
-<tt class="descname">paletted_id</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.paletted_id" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.highlight_height">
+<tt class="descname">highlight_height</tt><a class="headerlink" href="#pynwn.trigger.Trigger.highlight_height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cursor.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.key_auto_remove">
+<tt class="descname">key_auto_remove</tt><a class="headerlink" href="#pynwn.trigger.Trigger.key_auto_remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Auto-remove key flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.key_tag">
+<tt class="descname">key_tag</tt><a class="headerlink" href="#pynwn.trigger.Trigger.key_tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Key tag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.linked_to">
+<tt class="descname">linked_to</tt><a class="headerlink" href="#pynwn.trigger.Trigger.linked_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linked to object tag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.linked_to_flags">
+<tt class="descname">linked_to_flags</tt><a class="headerlink" href="#pynwn.trigger.Trigger.linked_to_flags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linked to flags.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.load_screen">
+<tt class="descname">load_screen</tt><a class="headerlink" href="#pynwn.trigger.Trigger.load_screen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load screen ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.paletted_id">
+<tt class="descname">paletted_id</tt><a class="headerlink" href="#pynwn.trigger.Trigger.paletted_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Palette ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.portrait_id">
-<tt class="descname">portrait_id</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.portrait_id" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.portrait_id">
+<tt class="descname">portrait_id</tt><a class="headerlink" href="#pynwn.trigger.Trigger.portrait_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Portrait ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.resref">
-<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.resref" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.trigger.Trigger.resref" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resref.</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.trigger.Trigger.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.trigger.Trigger.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.scripts">
-<tt class="descname">scripts</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.scripts" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.scripts">
+<tt class="descname">scripts</tt><a class="headerlink" href="#pynwn.trigger.Trigger.scripts" title="Permalink to this definition">¶</a></dt>
 <dd><p>Scripts.  Responds to script events:</p>
 <ol class="arabic simple">
 <li>Event.TRAP_DISARMED</li>
@@ -2014,57 +2294,63 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 </ol>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.trigger.Trigger.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.trigger.Trigger.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.tag">
-<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.tag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.trigger.Trigger.tag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.trap_detect_dc">
-<tt class="descname">trap_detect_dc</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.trap_detect_dc" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.trap_detect_dc">
+<tt class="descname">trap_detect_dc</tt><a class="headerlink" href="#pynwn.trigger.Trigger.trap_detect_dc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap detect DC.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.trap_detectable">
-<tt class="descname">trap_detectable</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.trap_detectable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.trap_detectable">
+<tt class="descname">trap_detectable</tt><a class="headerlink" href="#pynwn.trigger.Trigger.trap_detectable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap detectable flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.trap_disarm_dc">
-<tt class="descname">trap_disarm_dc</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.trap_disarm_dc" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.trap_disarm_dc">
+<tt class="descname">trap_disarm_dc</tt><a class="headerlink" href="#pynwn.trigger.Trigger.trap_disarm_dc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap disarm DC.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.trap_disarmable">
-<tt class="descname">trap_disarmable</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.trap_disarmable" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.trap_disarmable">
+<tt class="descname">trap_disarmable</tt><a class="headerlink" href="#pynwn.trigger.Trigger.trap_disarmable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap disarmable flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.trap_flag">
-<tt class="descname">trap_flag</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.trap_flag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.trap_flag">
+<tt class="descname">trap_flag</tt><a class="headerlink" href="#pynwn.trigger.Trigger.trap_flag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.trap_one_shot">
-<tt class="descname">trap_one_shot</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.trap_one_shot" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.trap_one_shot">
+<tt class="descname">trap_one_shot</tt><a class="headerlink" href="#pynwn.trigger.Trigger.trap_one_shot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap one shot flag.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.trap_type">
-<tt class="descname">trap_type</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.trap_type" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.trap_type">
+<tt class="descname">trap_type</tt><a class="headerlink" href="#pynwn.trigger.Trigger.trap_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trap type.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.trigger.Trigger.type">
-<tt class="descname">type</tt><a class="headerlink" href="#pynwn.obj.trigger.Trigger.type" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.Trigger.type">
+<tt class="descname">type</tt><a class="headerlink" href="#pynwn.trigger.Trigger.type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Type.</p>
 </dd></dl>
 
@@ -2074,8 +2360,8 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="triggerinstance">
 <h2>TriggerInstance<a class="headerlink" href="#triggerinstance" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.trigger.TriggerInstance">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.trigger.</tt><tt class="descname">TriggerInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.obj.trigger.TriggerInstance" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.trigger.TriggerInstance">
+<em class="property">class </em><tt class="descclassname">pynwn.trigger.</tt><tt class="descname">TriggerInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.trigger.TriggerInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>A trigger instance is one placed in an area in the toolset.
 As such it&#8217;s values are derived from its parent GFF structure.</p>
 </dd></dl>
@@ -2084,71 +2370,94 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="waypoint">
 <h2>Waypoint<a class="headerlink" href="#waypoint" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.waypoint.Waypoint">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.waypoint.</tt><tt class="descname">Waypoint</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.obj.waypoint.Waypoint" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.waypoint.Waypoint">
+<em class="property">class </em><tt class="descclassname">pynwn.waypoint.</tt><tt class="descname">Waypoint</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.waypoint.Waypoint" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="attribute">
-<dt id="pynwn.obj.waypoint.Waypoint.appearance">
-<tt class="descname">appearance</tt><a class="headerlink" href="#pynwn.obj.waypoint.Waypoint.appearance" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.waypoint.Waypoint.appearance">
+<tt class="descname">appearance</tt><a class="headerlink" href="#pynwn.waypoint.Waypoint.appearance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Appearance ID</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.waypoint.Waypoint.comment">
-<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.obj.waypoint.Waypoint.comment" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.waypoint.Waypoint.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.waypoint.Waypoint.comment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Comment.</p>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="pynwn.obj.waypoint.Waypoint.description">
-<tt class="descname">description</tt><a class="headerlink" href="#pynwn.obj.waypoint.Waypoint.description" title="Permalink to this definition">¶</a></dt>
+<dl class="method">
+<dt id="pynwn.waypoint.Waypoint.get_description">
+<tt class="descname">get_description</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.waypoint.Waypoint.get_description" title="Permalink to this definition">¶</a></dt>
 <dd><p>Localized description.</p>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="pynwn.obj.waypoint.Waypoint.has_map_note">
-<tt class="descname">has_map_note</tt><a class="headerlink" href="#pynwn.obj.waypoint.Waypoint.has_map_note" title="Permalink to this definition">¶</a></dt>
-<dd><p>Has map note flag.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.waypoint.Waypoint.linked_to">
-<tt class="descname">linked_to</tt><a class="headerlink" href="#pynwn.obj.waypoint.Waypoint.linked_to" title="Permalink to this definition">¶</a></dt>
-<dd><p>Linked to.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.waypoint.Waypoint.map_note">
-<tt class="descname">map_note</tt><a class="headerlink" href="#pynwn.obj.waypoint.Waypoint.map_note" title="Permalink to this definition">¶</a></dt>
+<dl class="method">
+<dt id="pynwn.waypoint.Waypoint.get_map_note">
+<tt class="descname">get_map_note</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.waypoint.Waypoint.get_map_note" title="Permalink to this definition">¶</a></dt>
 <dd><p>Localized map note.</p>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="pynwn.obj.waypoint.Waypoint.map_note_enabled">
-<tt class="descname">map_note_enabled</tt><a class="headerlink" href="#pynwn.obj.waypoint.Waypoint.map_note_enabled" title="Permalink to this definition">¶</a></dt>
-<dd><p>Map note enabled.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.obj.waypoint.Waypoint.name">
-<tt class="descname">name</tt><a class="headerlink" href="#pynwn.obj.waypoint.Waypoint.name" title="Permalink to this definition">¶</a></dt>
+<dl class="method">
+<dt id="pynwn.waypoint.Waypoint.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.waypoint.Waypoint.get_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Localized name.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.waypoint.Waypoint.palette_id">
-<tt class="descname">palette_id</tt><a class="headerlink" href="#pynwn.obj.waypoint.Waypoint.palette_id" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.waypoint.Waypoint.has_map_note">
+<tt class="descname">has_map_note</tt><a class="headerlink" href="#pynwn.waypoint.Waypoint.has_map_note" title="Permalink to this definition">¶</a></dt>
+<dd><p>Has map note flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.waypoint.Waypoint.linked_to">
+<tt class="descname">linked_to</tt><a class="headerlink" href="#pynwn.waypoint.Waypoint.linked_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linked to.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.waypoint.Waypoint.map_note_enabled">
+<tt class="descname">map_note_enabled</tt><a class="headerlink" href="#pynwn.waypoint.Waypoint.map_note_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Map note enabled.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.waypoint.Waypoint.palette_id">
+<tt class="descname">palette_id</tt><a class="headerlink" href="#pynwn.waypoint.Waypoint.palette_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Palette ID.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="pynwn.obj.waypoint.Waypoint.resref">
-<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.obj.waypoint.Waypoint.resref" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.waypoint.Waypoint.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.waypoint.Waypoint.resref" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resref.</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="pynwn.waypoint.Waypoint.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.waypoint.Waypoint.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pynwn.waypoint.Waypoint.set_description">
+<tt class="descname">set_description</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.waypoint.Waypoint.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.waypoint.Waypoint.set_map_note">
+<tt class="descname">set_map_note</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.waypoint.Waypoint.set_map_note" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized map note.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.waypoint.Waypoint.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.waypoint.Waypoint.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
 <dl class="attribute">
-<dt id="pynwn.obj.waypoint.Waypoint.tag">
-<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.obj.waypoint.Waypoint.tag" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.waypoint.Waypoint.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.waypoint.Waypoint.tag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tag.</p>
 </dd></dl>
 
@@ -2158,8 +2467,8 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <div class="section" id="waypointinstance">
 <h2>WaypointInstance<a class="headerlink" href="#waypointinstance" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="pynwn.obj.waypoint.WaypointInstance">
-<em class="property">class </em><tt class="descclassname">pynwn.obj.waypoint.</tt><tt class="descname">WaypointInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.obj.waypoint.WaypointInstance" title="Permalink to this definition">¶</a></dt>
+<dt id="pynwn.waypoint.WaypointInstance">
+<em class="property">class </em><tt class="descclassname">pynwn.waypoint.</tt><tt class="descname">WaypointInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.waypoint.WaypointInstance" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </div>
@@ -2185,6 +2494,8 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <li><a class="reference internal" href="#faction">Faction</a></li>
 <li><a class="reference internal" href="#item">Item</a></li>
 <li><a class="reference internal" href="#iteminstance">ItemInstance</a></li>
+<li><a class="reference internal" href="#itemproperty">ItemProperty</a></li>
+<li><a class="reference internal" href="#repositoryitem">RepositoryItem</a></li>
 <li><a class="reference internal" href="#journal">Journal</a></li>
 <li><a class="reference internal" href="#module">Module</a></li>
 <li><a class="reference internal" href="#palette">Palette</a></li>
