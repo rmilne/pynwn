@@ -82,6 +82,20 @@
 </dd></dl>
 
 <dl class="attribute">
+<dt id="pynwn.area.Area.doors">
+<tt class="descname">doors</tt><a class="headerlink" href="#pynwn.area.Area.doors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Door instances.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of DoorInstance objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
 <dt id="pynwn.area.Area.encounters">
 <tt class="descname">encounters</tt><a class="headerlink" href="#pynwn.area.Area.encounters" title="Permalink to this definition">¶</a></dt>
 <dd><p>Encounters</p>
@@ -100,6 +114,11 @@
 <tt class="descname">fog_clip_distance</tt><a class="headerlink" href="#pynwn.area.Area.fog_clip_distance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fog clip distance.</p>
 </dd></dl>
+
+<dl class="method">
+<dt id="pynwn.area.Area.get_instances">
+<tt class="descname">get_instances</tt><big>(</big><em>list_name</em>, <em>instance_class</em><big>)</big><a class="headerlink" href="#pynwn.area.Area.get_instances" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="pynwn.area.Area.get_name">
@@ -188,6 +207,13 @@
 <dt id="pynwn.area.Area.tag">
 <tt class="descname">tag</tt><a class="headerlink" href="#pynwn.area.Area.tag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.tiles">
+<tt class="descname">tiles</tt><a class="headerlink" href="#pynwn.area.Area.tiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tiles
+:returns: List of TileInstance objects.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -963,6 +989,11 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <em class="property">class </em><tt class="descclassname">pynwn.door.</tt><tt class="descname">DoorInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.door.DoorInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>A door instance is one placed in an area in the toolset.
 As such it&#8217;s values are derived from its parent GFF structure.</p>
+<dl class="attribute">
+<dt id="pynwn.door.DoorInstance.position">
+<tt class="descname">position</tt><a class="headerlink" href="#pynwn.door.DoorInstance.position" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 </div>
@@ -1830,6 +1861,11 @@ the object does not have an inventory.</td>
 <em class="property">class </em><tt class="descclassname">pynwn.placeable.</tt><tt class="descname">PlaceableInstance</tt><big>(</big><em>gff</em>, <em>orignal</em><big>)</big><a class="headerlink" href="#pynwn.placeable.PlaceableInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>A placeable instance is one placed in an area in the toolset.
 As such it&#8217;s values are derived from its parent GFF structure.</p>
+<dl class="attribute">
+<dt id="pynwn.placeable.PlaceableInstance.position">
+<tt class="descname">position</tt><a class="headerlink" href="#pynwn.placeable.PlaceableInstance.position" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 </div>
@@ -2364,6 +2400,11 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <em class="property">class </em><tt class="descclassname">pynwn.trigger.</tt><tt class="descname">TriggerInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.trigger.TriggerInstance" title="Permalink to this definition">¶</a></dt>
 <dd><p>A trigger instance is one placed in an area in the toolset.
 As such it&#8217;s values are derived from its parent GFF structure.</p>
+<dl class="attribute">
+<dt id="pynwn.trigger.TriggerInstance.position">
+<tt class="descname">position</tt><a class="headerlink" href="#pynwn.trigger.TriggerInstance.position" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 </div>
@@ -2469,7 +2510,12 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <dl class="class">
 <dt id="pynwn.waypoint.WaypointInstance">
 <em class="property">class </em><tt class="descclassname">pynwn.waypoint.</tt><tt class="descname">WaypointInstance</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.waypoint.WaypointInstance" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="pynwn.waypoint.WaypointInstance.position">
+<tt class="descname">position</tt><a class="headerlink" href="#pynwn.waypoint.WaypointInstance.position" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+</dd></dl>
 
 </div>
 </div>
