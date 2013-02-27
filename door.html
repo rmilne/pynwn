@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Door &mdash; pynwn 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="pynwn 0.1 documentation" href="index.html" />
+    <link rel="up" title="PyNWN Objects" href="objects.html" />
+    <link rel="next" title="Encounter" href="encounter.html" />
+    <link rel="prev" title="Dialog" href="dialog.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="encounter.html" title="Encounter"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dialog.html" title="Dialog"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">pynwn 0.1 documentation</a> &raquo;</li>
+          <li><a href="objects.html" accesskey="U">PyNWN Objects</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="door">
+<h1>Door<a class="headerlink" href="#door" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pynwn.door.Door">
+<em class="property">class </em><tt class="descclassname">pynwn.door.</tt><tt class="descname">Door</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.door.Door" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="pynwn.door.Door.animation_state">
+<tt class="descname">animation_state</tt><a class="headerlink" href="#pynwn.door.Door.animation_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Animation State.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.appearance">
+<tt class="descname">appearance</tt><a class="headerlink" href="#pynwn.door.Door.appearance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Appearance ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.door.Door.comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Comment.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.conversation">
+<tt class="descname">conversation</tt><a class="headerlink" href="#pynwn.door.Door.conversation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Conversation resref.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.faction">
+<tt class="descname">faction</tt><a class="headerlink" href="#pynwn.door.Door.faction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Faction ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.generic_type">
+<tt class="descname">generic_type</tt><a class="headerlink" href="#pynwn.door.Door.generic_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generic type.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.door.Door.get_description">
+<tt class="descname">get_description</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.door.Door.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.door.Door.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.door.Door.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.hardness">
+<tt class="descname">hardness</tt><a class="headerlink" href="#pynwn.door.Door.hardness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hardness.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.hp">
+<tt class="descname">hp</tt><a class="headerlink" href="#pynwn.door.Door.hp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum Hitpoints.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.hp_current">
+<tt class="descname">hp_current</tt><a class="headerlink" href="#pynwn.door.Door.hp_current" title="Permalink to this definition">¶</a></dt>
+<dd><p>Current Hitpoints.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.interruptable">
+<tt class="descname">interruptable</tt><a class="headerlink" href="#pynwn.door.Door.interruptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Conversation interruptable flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.key_auto_remove">
+<tt class="descname">key_auto_remove</tt><a class="headerlink" href="#pynwn.door.Door.key_auto_remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Auto-remove key.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.key_required">
+<tt class="descname">key_required</tt><a class="headerlink" href="#pynwn.door.Door.key_required" title="Permalink to this definition">¶</a></dt>
+<dd><p>Key required flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.key_tag">
+<tt class="descname">key_tag</tt><a class="headerlink" href="#pynwn.door.Door.key_tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Key tag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.linked_to">
+<tt class="descname">linked_to</tt><a class="headerlink" href="#pynwn.door.Door.linked_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linked to tag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.linked_to_flags">
+<tt class="descname">linked_to_flags</tt><a class="headerlink" href="#pynwn.door.Door.linked_to_flags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linked to flags.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.load_screen">
+<tt class="descname">load_screen</tt><a class="headerlink" href="#pynwn.door.Door.load_screen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load screen ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.lock_close_dc">
+<tt class="descname">lock_close_dc</tt><a class="headerlink" href="#pynwn.door.Door.lock_close_dc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close lock DC.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.lock_open_dc">
+<tt class="descname">lock_open_dc</tt><a class="headerlink" href="#pynwn.door.Door.lock_open_dc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open lock DC.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.lockable">
+<tt class="descname">lockable</tt><a class="headerlink" href="#pynwn.door.Door.lockable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lockable flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.locked">
+<tt class="descname">locked</tt><a class="headerlink" href="#pynwn.door.Door.locked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locked flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.paletted_id">
+<tt class="descname">paletted_id</tt><a class="headerlink" href="#pynwn.door.Door.paletted_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Palette ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.plot">
+<tt class="descname">plot</tt><a class="headerlink" href="#pynwn.door.Door.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.portrait_id">
+<tt class="descname">portrait_id</tt><a class="headerlink" href="#pynwn.door.Door.portrait_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Portrait ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.door.Door.resref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resref.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.save_fortitude">
+<tt class="descname">save_fortitude</tt><a class="headerlink" href="#pynwn.door.Door.save_fortitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fortitude Saving Throw.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.save_reflex">
+<tt class="descname">save_reflex</tt><a class="headerlink" href="#pynwn.door.Door.save_reflex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reflex Saving Throw.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.save_will">
+<tt class="descname">save_will</tt><a class="headerlink" href="#pynwn.door.Door.save_will" title="Permalink to this definition">¶</a></dt>
+<dd><p>Will Saving Throw.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.script">
+<tt class="descname">script</tt><a class="headerlink" href="#pynwn.door.Door.script" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scripts: Door responds to the following script events:</p>
+<ol class="arabic simple">
+<li>Event.CLOSE</li>
+<li>Event.DAMAGED</li>
+<li>Event.DEATH</li>
+<li>Event.TRAP_DISARMED</li>
+<li>Event.HEARTBEAT</li>
+<li>Event.LOCK</li>
+<li>Event.ATTACKED</li>
+<li>Event.OPEN</li>
+<li>Event.SPELL_CAST_AT</li>
+<li>Event.TRAP_TRIGGERED</li>
+<li>Event.UNLOCK</li>
+<li>Event.USER_DEFINED</li>
+<li>Event.CLICK</li>
+<li>Event.FAIL_TO_OPEN</li>
+</ol>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.door.Door.set_description">
+<tt class="descname">set_description</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.door.Door.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.door.Door.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.door.Door.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.door.Door.stage">
+<tt class="descname">stage</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.door.Door.stage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stages changes to door&#8217;s GFF structure.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.door.Door.tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.trap_detect_dc">
+<tt class="descname">trap_detect_dc</tt><a class="headerlink" href="#pynwn.door.Door.trap_detect_dc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap detect DC.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.trap_detectable">
+<tt class="descname">trap_detectable</tt><a class="headerlink" href="#pynwn.door.Door.trap_detectable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap detectable flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.trap_disarm_dc">
+<tt class="descname">trap_disarm_dc</tt><a class="headerlink" href="#pynwn.door.Door.trap_disarm_dc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap disarm DC.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.trap_disarmable">
+<tt class="descname">trap_disarmable</tt><a class="headerlink" href="#pynwn.door.Door.trap_disarmable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap disarmable flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.trap_flag">
+<tt class="descname">trap_flag</tt><a class="headerlink" href="#pynwn.door.Door.trap_flag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.trap_one_shot">
+<tt class="descname">trap_one_shot</tt><a class="headerlink" href="#pynwn.door.Door.trap_one_shot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap is one-shot.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.door.Door.trap_type">
+<tt class="descname">trap_type</tt><a class="headerlink" href="#pynwn.door.Door.trap_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap type.</p>
+</dd></dl>
+
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="class">
+<dt id="pynwn.door.DoorInstance">
+<em class="property">class </em><tt class="descclassname">pynwn.door.</tt><tt class="descname">DoorInstance</tt><big>(</big><em>gff</em>, <em>parent_obj</em><big>)</big><a class="headerlink" href="#pynwn.door.DoorInstance" title="Permalink to this definition">¶</a></dt>
+<dd><p>A door instance is one placed in an area in the toolset.
+As such it&#8217;s values are derived from its parent GFF structure.</p>
+<dl class="attribute">
+<dt id="pynwn.door.DoorInstance.position">
+<tt class="descname">position</tt><a class="headerlink" href="#pynwn.door.DoorInstance.position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Tuple of x, y, z coordinates.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.door.DoorInstance.stage">
+<tt class="descname">stage</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.door.DoorInstance.stage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stages changes to the door instances parent object.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="dialog.html"
+                        title="previous chapter">Dialog</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="encounter.html"
+                        title="next chapter">Encounter</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/door.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="encounter.html" title="Encounter"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dialog.html" title="Dialog"
+             >previous</a> |</li>
+        <li><a href="index.html">pynwn 0.1 documentation</a> &raquo;</li>
+          <li><a href="objects.html" >PyNWN Objects</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, jmd.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

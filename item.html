@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Item &mdash; pynwn 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="pynwn 0.1 documentation" href="index.html" />
+    <link rel="up" title="PyNWN Objects" href="objects.html" />
+    <link rel="next" title="Journal" href="journal.html" />
+    <link rel="prev" title="Faction" href="faction.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="journal.html" title="Journal"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="faction.html" title="Faction"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">pynwn 0.1 documentation</a> &raquo;</li>
+          <li><a href="objects.html" accesskey="U">PyNWN Objects</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="item">
+<h1>Item<a class="headerlink" href="#item" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pynwn.item.Item">
+<em class="property">class </em><tt class="descclassname">pynwn.item.</tt><tt class="descname">Item</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.item.Item" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="pynwn.item.Item.base_type">
+<tt class="descname">base_type</tt><a class="headerlink" href="#pynwn.item.Item.base_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base item ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.charges">
+<tt class="descname">charges</tt><a class="headerlink" href="#pynwn.item.Item.charges" title="Permalink to this definition">¶</a></dt>
+<dd><p>Charges.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.item.Item.comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Comment.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.cost">
+<tt class="descname">cost</tt><a class="headerlink" href="#pynwn.item.Item.cost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cost.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.cost_additional">
+<tt class="descname">cost_additional</tt><a class="headerlink" href="#pynwn.item.Item.cost_additional" title="Permalink to this definition">¶</a></dt>
+<dd><p>Additional Cost.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.cursed">
+<tt class="descname">cursed</tt><a class="headerlink" href="#pynwn.item.Item.cursed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cursed flag.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.item.Item.get_description">
+<tt class="descname">get_description</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.item.Item.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized unidentified description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.item.Item.get_description_id">
+<tt class="descname">get_description_id</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.item.Item.get_description_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized identified description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.item.Item.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.item.Item.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.identified">
+<tt class="descname">identified</tt><a class="headerlink" href="#pynwn.item.Item.identified" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identified flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.model">
+<tt class="descname">model</tt><a class="headerlink" href="#pynwn.item.Item.model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.palette_id">
+<tt class="descname">palette_id</tt><a class="headerlink" href="#pynwn.item.Item.palette_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Palette ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.plot">
+<tt class="descname">plot</tt><a class="headerlink" href="#pynwn.item.Item.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.properties">
+<tt class="descname">properties</tt><a class="headerlink" href="#pynwn.item.Item.properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Item properties</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of ItemProperty objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.item.Item.resref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resref.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.item.Item.set_description">
+<tt class="descname">set_description</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.item.Item.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized unidentified description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.item.Item.set_description_id">
+<tt class="descname">set_description_id</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.item.Item.set_description_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized identified description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.item.Item.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.item.Item.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.stack_size">
+<tt class="descname">stack_size</tt><a class="headerlink" href="#pynwn.item.Item.stack_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stack size.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.item.Item.stage">
+<tt class="descname">stage</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.item.Item.stage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stages changes to the item&#8217;s GFF structure.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.stolen">
+<tt class="descname">stolen</tt><a class="headerlink" href="#pynwn.item.Item.stolen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stolen flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.Item.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.item.Item.tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tag.</p>
+</dd></dl>
+
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="class">
+<dt id="pynwn.item.ItemInstance">
+<em class="property">class </em><tt class="descclassname">pynwn.item.</tt><tt class="descname">ItemInstance</tt><big>(</big><em>gff</em>, <em>parent_obj</em><big>)</big><a class="headerlink" href="#pynwn.item.ItemInstance" title="Permalink to this definition">¶</a></dt>
+<dd><p>A item instance is one placed in an area in the toolset.
+As such it&#8217;s values are derived from its parent GFF structure.</p>
+<dl class="method">
+<dt id="pynwn.item.ItemInstance.stage">
+<tt class="descname">stage</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.item.ItemInstance.stage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stages changes to the encounter creature instances parent object.</p>
+</dd></dl>
+
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="class">
+<dt id="pynwn.item.ItemProperty">
+<em class="property">class </em><tt class="descclassname">pynwn.item.</tt><tt class="descname">ItemProperty</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.item.ItemProperty" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="pynwn.item.ItemProperty.chance">
+<tt class="descname">chance</tt><a class="headerlink" href="#pynwn.item.ItemProperty.chance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Appearance chance.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.ItemProperty.cost_table">
+<tt class="descname">cost_table</tt><a class="headerlink" href="#pynwn.item.ItemProperty.cost_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cost table.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.ItemProperty.cost_value">
+<tt class="descname">cost_value</tt><a class="headerlink" href="#pynwn.item.ItemProperty.cost_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cost value.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.ItemProperty.param_table">
+<tt class="descname">param_table</tt><a class="headerlink" href="#pynwn.item.ItemProperty.param_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parameter table.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.ItemProperty.param_value">
+<tt class="descname">param_value</tt><a class="headerlink" href="#pynwn.item.ItemProperty.param_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parameter value.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.ItemProperty.subtype">
+<tt class="descname">subtype</tt><a class="headerlink" href="#pynwn.item.ItemProperty.subtype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subtype.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.ItemProperty.type">
+<tt class="descname">type</tt><a class="headerlink" href="#pynwn.item.ItemProperty.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Type.</p>
+</dd></dl>
+
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="class">
+<dt id="pynwn.item.RepositoryItem">
+<em class="property">class </em><tt class="descclassname">pynwn.item.</tt><tt class="descname">RepositoryItem</tt><big>(</big><em>gff</em>, <em>parent_obj</em><big>)</big><a class="headerlink" href="#pynwn.item.RepositoryItem" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="pynwn.item.RepositoryItem.dropable">
+<tt class="descname">dropable</tt><a class="headerlink" href="#pynwn.item.RepositoryItem.dropable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dropable flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.RepositoryItem.infinite">
+<tt class="descname">infinite</tt><a class="headerlink" href="#pynwn.item.RepositoryItem.infinite" title="Permalink to this definition">¶</a></dt>
+<dd><p>Infinite flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.RepositoryItem.position">
+<tt class="descname">position</tt><a class="headerlink" href="#pynwn.item.RepositoryItem.position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position in inventory</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Tuple of x and y coordinates.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.item.RepositoryItem.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.item.RepositoryItem.resref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resref.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.item.RepositoryItem.stage">
+<tt class="descname">stage</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.item.RepositoryItem.stage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stages changes to parent object&#8217;s GFF structure</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="faction.html"
+                        title="previous chapter">Faction</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="journal.html"
+                        title="next chapter">Journal</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/item.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="journal.html" title="Journal"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="faction.html" title="Faction"
+             >previous</a> |</li>
+        <li><a href="index.html">pynwn 0.1 documentation</a> &raquo;</li>
+          <li><a href="objects.html" >PyNWN Objects</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, jmd.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

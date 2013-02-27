@@ -1,0 +1,555 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Creature &mdash; pynwn 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="pynwn 0.1 documentation" href="index.html" />
+    <link rel="up" title="PyNWN Objects" href="objects.html" />
+    <link rel="next" title="Dialog" href="dialog.html" />
+    <link rel="prev" title="Area" href="area.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dialog.html" title="Dialog"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="area.html" title="Area"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">pynwn 0.1 documentation</a> &raquo;</li>
+          <li><a href="objects.html" accesskey="U">PyNWN Objects</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="creature">
+<h1>Creature<a class="headerlink" href="#creature" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pynwn.creature.Creature">
+<em class="property">class </em><tt class="descclassname">pynwn.creature.</tt><tt class="descname">Creature</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.creature.Creature" title="Permalink to this definition">¶</a></dt>
+<dd><p>This abstracts over UTCs only... It doesn&#8217;t handle all the additional
+fields one finds in BICs, see object PlayerCharacter for that.</p>
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.appearance">
+<tt class="descname">appearance</tt><a class="headerlink" href="#pynwn.creature.Creature.appearance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Appearance ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.bodybag">
+<tt class="descname">bodybag</tt><a class="headerlink" href="#pynwn.creature.Creature.bodybag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Body bag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.classes">
+<tt class="descname">classes</tt><a class="headerlink" href="#pynwn.creature.Creature.classes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature&#8217;s classes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of tuples containing class ID and level.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.creature.Creature.comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Comment.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.constitution">
+<tt class="descname">constitution</tt><a class="headerlink" href="#pynwn.creature.Creature.constitution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature&#8217;s constitution.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.conversation">
+<tt class="descname">conversation</tt><a class="headerlink" href="#pynwn.creature.Creature.conversation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dialog resref.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.corpse_decay">
+<tt class="descname">corpse_decay</tt><a class="headerlink" href="#pynwn.creature.Creature.corpse_decay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Corpse decay time.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.cr">
+<tt class="descname">cr</tt><a class="headerlink" href="#pynwn.creature.Creature.cr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Challenge Rating</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.dexterity">
+<tt class="descname">dexterity</tt><a class="headerlink" href="#pynwn.creature.Creature.dexterity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature&#8217;s dexterity.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.diety">
+<tt class="descname">diety</tt><a class="headerlink" href="#pynwn.creature.Creature.diety" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deity</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.disarmable">
+<tt class="descname">disarmable</tt><a class="headerlink" href="#pynwn.creature.Creature.disarmable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disarmable flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.equips">
+<tt class="descname">equips</tt><a class="headerlink" href="#pynwn.creature.Creature.equips" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature&#8217;s equipment list.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of tuples containing equipment ID and resref.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.faction">
+<tt class="descname">faction</tt><a class="headerlink" href="#pynwn.creature.Creature.faction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Faction ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.feats">
+<tt class="descname">feats</tt><a class="headerlink" href="#pynwn.creature.Creature.feats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature&#8217;s feats.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of feat IDs.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.gender">
+<tt class="descname">gender</tt><a class="headerlink" href="#pynwn.creature.Creature.gender" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gender.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.creature.Creature.get_description">
+<tt class="descname">get_description</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.creature.Creature.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.creature.Creature.get_name_first">
+<tt class="descname">get_name_first</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.creature.Creature.get_name_first" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized first name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.creature.Creature.get_name_last">
+<tt class="descname">get_name_last</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.creature.Creature.get_name_last" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized last name</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.goodevil">
+<tt class="descname">goodevil</tt><a class="headerlink" href="#pynwn.creature.Creature.goodevil" title="Permalink to this definition">¶</a></dt>
+<dd><p>Good - Evil</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.hp">
+<tt class="descname">hp</tt><a class="headerlink" href="#pynwn.creature.Creature.hp" title="Permalink to this definition">¶</a></dt>
+<dd><p>HP.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.hp_current">
+<tt class="descname">hp_current</tt><a class="headerlink" href="#pynwn.creature.Creature.hp_current" title="Permalink to this definition">¶</a></dt>
+<dd><p>Current hitpoints.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.hp_max">
+<tt class="descname">hp_max</tt><a class="headerlink" href="#pynwn.creature.Creature.hp_max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum hitpoints.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.intelligence">
+<tt class="descname">intelligence</tt><a class="headerlink" href="#pynwn.creature.Creature.intelligence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature&#8217;s intelligence.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.interruptable">
+<tt class="descname">interruptable</tt><a class="headerlink" href="#pynwn.creature.Creature.interruptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Conversation interruptable flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.is_immortal">
+<tt class="descname">is_immortal</tt><a class="headerlink" href="#pynwn.creature.Creature.is_immortal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Immortal flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.is_pc">
+<tt class="descname">is_pc</tt><a class="headerlink" href="#pynwn.creature.Creature.is_pc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Player character flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.items">
+<tt class="descname">items</tt><a class="headerlink" href="#pynwn.creature.Creature.items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature&#8217;s inventory items.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of RepositoryItems.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.lawchaos">
+<tt class="descname">lawchaos</tt><a class="headerlink" href="#pynwn.creature.Creature.lawchaos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lawful - Chaotic</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.lootable">
+<tt class="descname">lootable</tt><a class="headerlink" href="#pynwn.creature.Creature.lootable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lootable.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.natural_ac">
+<tt class="descname">natural_ac</tt><a class="headerlink" href="#pynwn.creature.Creature.natural_ac" title="Permalink to this definition">¶</a></dt>
+<dd><p>Natural AC.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.no_perm_death">
+<tt class="descname">no_perm_death</tt><a class="headerlink" href="#pynwn.creature.Creature.no_perm_death" title="Permalink to this definition">¶</a></dt>
+<dd><p>No permenant death flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.palette_id">
+<tt class="descname">palette_id</tt><a class="headerlink" href="#pynwn.creature.Creature.palette_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Palette ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.perception_range">
+<tt class="descname">perception_range</tt><a class="headerlink" href="#pynwn.creature.Creature.perception_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perception Range.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.phenotype">
+<tt class="descname">phenotype</tt><a class="headerlink" href="#pynwn.creature.Creature.phenotype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Phenotype ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.portrait_id">
+<tt class="descname">portrait_id</tt><a class="headerlink" href="#pynwn.creature.Creature.portrait_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Portrait ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.race">
+<tt class="descname">race</tt><a class="headerlink" href="#pynwn.creature.Creature.race" title="Permalink to this definition">¶</a></dt>
+<dd><p>Racial Type</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.creature.Creature.resref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resref.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.save_fortitude">
+<tt class="descname">save_fortitude</tt><a class="headerlink" href="#pynwn.creature.Creature.save_fortitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fortitude saving throw.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.save_reflex">
+<tt class="descname">save_reflex</tt><a class="headerlink" href="#pynwn.creature.Creature.save_reflex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reflex saving throw.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.save_will">
+<tt class="descname">save_will</tt><a class="headerlink" href="#pynwn.creature.Creature.save_will" title="Permalink to this definition">¶</a></dt>
+<dd><p>Will saving throw.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.scripts">
+<tt class="descname">scripts</tt><a class="headerlink" href="#pynwn.creature.Creature.scripts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature&#8217;s scripts.  Responds to script events:</p>
+<ul class="simple">
+<li>Event.HEARTBEAT</li>
+<li>Event.PERCEPTION</li>
+<li>Event.SPELL_CAST_AT</li>
+<li>Event.ATTACKED</li>
+<li>Event.DAMAGED</li>
+<li>Event.DISTURBED</li>
+<li>Event.END_COMBAT_ROUND</li>
+<li>Event.CONVERSATION</li>
+<li>Event.SPAWN</li>
+<li>Event.REST</li>
+<li>Event.DEATH</li>
+<li>Event.USER_DEFINED</li>
+<li>Event.BLOCKED</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.creature.Creature.set_description">
+<tt class="descname">set_description</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.creature.Creature.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.creature.Creature.set_name_first">
+<tt class="descname">set_name_first</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.creature.Creature.set_name_first" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized first name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.creature.Creature.set_name_last">
+<tt class="descname">set_name_last</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.creature.Creature.set_name_last" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized last name</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.skills">
+<tt class="descname">skills</tt><a class="headerlink" href="#pynwn.creature.Creature.skills" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature&#8217;s skills</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of skill ranks in order of skill ID.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.special_abilities">
+<tt class="descname">special_abilities</tt><a class="headerlink" href="#pynwn.creature.Creature.special_abilities" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pynwn.creature.Creature.stage">
+<tt class="descname">stage</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.creature.Creature.stage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stages changes creature&#8217;s GFF structure.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.starting_package">
+<tt class="descname">starting_package</tt><a class="headerlink" href="#pynwn.creature.Creature.starting_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>Starting package ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.strength">
+<tt class="descname">strength</tt><a class="headerlink" href="#pynwn.creature.Creature.strength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature&#8217;s strength.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.subrace">
+<tt class="descname">subrace</tt><a class="headerlink" href="#pynwn.creature.Creature.subrace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subrace.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.creature.Creature.tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tag</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.tail">
+<tt class="descname">tail</tt><a class="headerlink" href="#pynwn.creature.Creature.tail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tail ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.walkrate">
+<tt class="descname">walkrate</tt><a class="headerlink" href="#pynwn.creature.Creature.walkrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Walkrate.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.wings">
+<tt class="descname">wings</tt><a class="headerlink" href="#pynwn.creature.Creature.wings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wings ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.Creature.wisdom">
+<tt class="descname">wisdom</tt><a class="headerlink" href="#pynwn.creature.Creature.wisdom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature&#8217;s wisdom.</p>
+</dd></dl>
+
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="class">
+<dt id="pynwn.creature.CreatureInstance">
+<em class="property">class </em><tt class="descclassname">pynwn.creature.</tt><tt class="descname">CreatureInstance</tt><big>(</big><em>gff</em>, <em>parent_obj</em><big>)</big><a class="headerlink" href="#pynwn.creature.CreatureInstance" title="Permalink to this definition">¶</a></dt>
+<dd><p>A creature instance is one placed in an area in the toolset.
+As such it&#8217;s values are derived from its parent GFF structure.</p>
+<dl class="attribute">
+<dt id="pynwn.creature.CreatureInstance.equips">
+<tt class="descname">equips</tt><a class="headerlink" href="#pynwn.creature.CreatureInstance.equips" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature&#8217;s equipment list.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of tuples containing equipment ID and ItemInstance.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.creature.CreatureInstance.items">
+<tt class="descname">items</tt><a class="headerlink" href="#pynwn.creature.CreatureInstance.items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature&#8217;s inventory items.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of Tupels contiain repository position
+and the ItemInstance.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.creature.CreatureInstance.stage">
+<tt class="descname">stage</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.creature.CreatureInstance.stage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stages changes to the creature instances parent object.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="area.html"
+                        title="previous chapter">Area</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="dialog.html"
+                        title="next chapter">Dialog</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/creature.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dialog.html" title="Dialog"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="area.html" title="Area"
+             >previous</a> |</li>
+        <li><a href="index.html">pynwn 0.1 documentation</a> &raquo;</li>
+          <li><a href="objects.html" >PyNWN Objects</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, jmd.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

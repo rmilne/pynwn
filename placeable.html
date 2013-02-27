@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Placeable &mdash; pynwn 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="pynwn 0.1 documentation" href="index.html" />
+    <link rel="up" title="PyNWN Objects" href="objects.html" />
+    <link rel="next" title="Sound" href="sound.html" />
+    <link rel="prev" title="Palette" href="palette.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="sound.html" title="Sound"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="palette.html" title="Palette"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">pynwn 0.1 documentation</a> &raquo;</li>
+          <li><a href="objects.html" accesskey="U">PyNWN Objects</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="placeable">
+<h1>Placeable<a class="headerlink" href="#placeable" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pynwn.placeable.Placeable">
+<em class="property">class </em><tt class="descclassname">pynwn.placeable.</tt><tt class="descname">Placeable</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em>, <em>instance_gff=None</em><big>)</big><a class="headerlink" href="#pynwn.placeable.Placeable" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="pynwn.placeable.Placeable.animation_state">
+<tt class="descname">animation_state</tt><a class="headerlink" href="#pynwn.placeable.Placeable.animation_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Animation State.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.appearance">
+<tt class="descname">appearance</tt><a class="headerlink" href="#pynwn.placeable.Placeable.appearance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Appearance ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.body_bag">
+<tt class="descname">body_bag</tt><a class="headerlink" href="#pynwn.placeable.Placeable.body_bag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Body bag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.placeable.Placeable.comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Comment.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.conversation">
+<tt class="descname">conversation</tt><a class="headerlink" href="#pynwn.placeable.Placeable.conversation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Conversation resref.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.faction">
+<tt class="descname">faction</tt><a class="headerlink" href="#pynwn.placeable.Placeable.faction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Faction ID.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.placeable.Placeable.get_description">
+<tt class="descname">get_description</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.placeable.Placeable.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.placeable.Placeable.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.placeable.Placeable.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.hardness">
+<tt class="descname">hardness</tt><a class="headerlink" href="#pynwn.placeable.Placeable.hardness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hardness.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.has_inventory">
+<tt class="descname">has_inventory</tt><a class="headerlink" href="#pynwn.placeable.Placeable.has_inventory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Has inventory flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.hp">
+<tt class="descname">hp</tt><a class="headerlink" href="#pynwn.placeable.Placeable.hp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum Hitpoints.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.hp_current">
+<tt class="descname">hp_current</tt><a class="headerlink" href="#pynwn.placeable.Placeable.hp_current" title="Permalink to this definition">¶</a></dt>
+<dd><p>Current Hitpoints.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.interruptable">
+<tt class="descname">interruptable</tt><a class="headerlink" href="#pynwn.placeable.Placeable.interruptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Conversation interruptable flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.items">
+<tt class="descname">items</tt><a class="headerlink" href="#pynwn.placeable.Placeable.items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Invenory items.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of RepositoryItem objects or [] if
+the object does not have an inventory.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.key_auto_remove">
+<tt class="descname">key_auto_remove</tt><a class="headerlink" href="#pynwn.placeable.Placeable.key_auto_remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Auto-remove key.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.key_required">
+<tt class="descname">key_required</tt><a class="headerlink" href="#pynwn.placeable.Placeable.key_required" title="Permalink to this definition">¶</a></dt>
+<dd><p>Key required flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.key_tag">
+<tt class="descname">key_tag</tt><a class="headerlink" href="#pynwn.placeable.Placeable.key_tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Key tag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.lock_close_dc">
+<tt class="descname">lock_close_dc</tt><a class="headerlink" href="#pynwn.placeable.Placeable.lock_close_dc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close lock DC.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.lock_open_dc">
+<tt class="descname">lock_open_dc</tt><a class="headerlink" href="#pynwn.placeable.Placeable.lock_open_dc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open lock DC.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.lockable">
+<tt class="descname">lockable</tt><a class="headerlink" href="#pynwn.placeable.Placeable.lockable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lockable flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.locked">
+<tt class="descname">locked</tt><a class="headerlink" href="#pynwn.placeable.Placeable.locked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locked flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.paletted_id">
+<tt class="descname">paletted_id</tt><a class="headerlink" href="#pynwn.placeable.Placeable.paletted_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Palette ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.plot">
+<tt class="descname">plot</tt><a class="headerlink" href="#pynwn.placeable.Placeable.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.portrait_id">
+<tt class="descname">portrait_id</tt><a class="headerlink" href="#pynwn.placeable.Placeable.portrait_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Portrait ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.placeable.Placeable.resref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resref.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.save_fortitude">
+<tt class="descname">save_fortitude</tt><a class="headerlink" href="#pynwn.placeable.Placeable.save_fortitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fortitude Saving Throw.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.save_reflex">
+<tt class="descname">save_reflex</tt><a class="headerlink" href="#pynwn.placeable.Placeable.save_reflex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reflex Saving Throw.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.save_will">
+<tt class="descname">save_will</tt><a class="headerlink" href="#pynwn.placeable.Placeable.save_will" title="Permalink to this definition">¶</a></dt>
+<dd><p>Will Saving Throw.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.script">
+<tt class="descname">script</tt><a class="headerlink" href="#pynwn.placeable.Placeable.script" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scripts.  Responds to script events:</p>
+<ol class="arabic simple">
+<li>Event.CLOSE</li>
+<li>Event.DAMAGED</li>
+<li>Event.DEATH</li>
+<li>Event.TRAP_DISARMED</li>
+<li>Event.HEARTBEAT</li>
+<li>Event.LOCK</li>
+<li>Event.ATTACKED</li>
+<li>Event.OPEN</li>
+<li>Event.SPELL_CAST_AT</li>
+<li>Event.TRAP_TRIGGERED</li>
+<li>Event.UNLOCK</li>
+<li>Event.USER_DEFINED</li>
+<li>Event.CLICK</li>
+<li>Event.DISTURBED</li>
+<li>Event.USED</li>
+</ol>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.placeable.Placeable.set_description">
+<tt class="descname">set_description</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.placeable.Placeable.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.placeable.Placeable.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.placeable.Placeable.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.placeable.Placeable.stage">
+<tt class="descname">stage</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.placeable.Placeable.stage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stage changes to the placeable&#8217;s GFF structure.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.static">
+<tt class="descname">static</tt><a class="headerlink" href="#pynwn.placeable.Placeable.static" title="Permalink to this definition">¶</a></dt>
+<dd><p>Static flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.placeable.Placeable.tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.trap_detect_dc">
+<tt class="descname">trap_detect_dc</tt><a class="headerlink" href="#pynwn.placeable.Placeable.trap_detect_dc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap detect DC.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.trap_detectable">
+<tt class="descname">trap_detectable</tt><a class="headerlink" href="#pynwn.placeable.Placeable.trap_detectable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap detectable flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.trap_disarm_dc">
+<tt class="descname">trap_disarm_dc</tt><a class="headerlink" href="#pynwn.placeable.Placeable.trap_disarm_dc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap disarm DC.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.trap_disarmable">
+<tt class="descname">trap_disarmable</tt><a class="headerlink" href="#pynwn.placeable.Placeable.trap_disarmable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap disarmable flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.trap_flag">
+<tt class="descname">trap_flag</tt><a class="headerlink" href="#pynwn.placeable.Placeable.trap_flag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.trap_one_shot">
+<tt class="descname">trap_one_shot</tt><a class="headerlink" href="#pynwn.placeable.Placeable.trap_one_shot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap is one-shot.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.trap_type">
+<tt class="descname">trap_type</tt><a class="headerlink" href="#pynwn.placeable.Placeable.trap_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.type">
+<tt class="descname">type</tt><a class="headerlink" href="#pynwn.placeable.Placeable.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.Placeable.useable">
+<tt class="descname">useable</tt><a class="headerlink" href="#pynwn.placeable.Placeable.useable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Useable flag.</p>
+</dd></dl>
+
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="class">
+<dt id="pynwn.placeable.PlaceableInstance">
+<em class="property">class </em><tt class="descclassname">pynwn.placeable.</tt><tt class="descname">PlaceableInstance</tt><big>(</big><em>gff</em>, <em>orignal</em><big>)</big><a class="headerlink" href="#pynwn.placeable.PlaceableInstance" title="Permalink to this definition">¶</a></dt>
+<dd><p>A placeable instance is one placed in an area in the toolset.
+As such it&#8217;s values are derived from its parent GFF structure.</p>
+<dl class="attribute">
+<dt id="pynwn.placeable.PlaceableInstance.items">
+<tt class="descname">items</tt><a class="headerlink" href="#pynwn.placeable.PlaceableInstance.items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inventory items.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of Tupels contiain repository position
+and the ItemInstance.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.placeable.PlaceableInstance.position">
+<tt class="descname">position</tt><a class="headerlink" href="#pynwn.placeable.PlaceableInstance.position" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pynwn.placeable.PlaceableInstance.stage">
+<tt class="descname">stage</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.placeable.PlaceableInstance.stage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stage changes to the placeable instance&#8217;s parent GFF structure.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="palette.html"
+                        title="previous chapter">Palette</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="sound.html"
+                        title="next chapter">Sound</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/placeable.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="sound.html" title="Sound"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="palette.html" title="Palette"
+             >previous</a> |</li>
+        <li><a href="index.html">pynwn 0.1 documentation</a> &raquo;</li>
+          <li><a href="objects.html" >PyNWN Objects</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, jmd.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

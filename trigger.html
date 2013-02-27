@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Trigger &mdash; pynwn 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="pynwn 0.1 documentation" href="index.html" />
+    <link rel="up" title="PyNWN Objects" href="objects.html" />
+    <link rel="next" title="Waypoint" href="waypoint.html" />
+    <link rel="prev" title="Store" href="store.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="waypoint.html" title="Waypoint"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="store.html" title="Store"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">pynwn 0.1 documentation</a> &raquo;</li>
+          <li><a href="objects.html" accesskey="U">PyNWN Objects</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="trigger">
+<h1>Trigger<a class="headerlink" href="#trigger" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pynwn.trigger.Trigger">
+<em class="property">class </em><tt class="descclassname">pynwn.trigger.</tt><tt class="descname">Trigger</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.trigger.Trigger" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="pynwn.trigger.Trigger.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#pynwn.trigger.Trigger.comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Comment.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.faction">
+<tt class="descname">faction</tt><a class="headerlink" href="#pynwn.trigger.Trigger.faction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Faction ID.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.trigger.Trigger.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.trigger.Trigger.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.highlight_height">
+<tt class="descname">highlight_height</tt><a class="headerlink" href="#pynwn.trigger.Trigger.highlight_height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cursor.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.key_auto_remove">
+<tt class="descname">key_auto_remove</tt><a class="headerlink" href="#pynwn.trigger.Trigger.key_auto_remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Auto-remove key flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.key_tag">
+<tt class="descname">key_tag</tt><a class="headerlink" href="#pynwn.trigger.Trigger.key_tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Key tag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.linked_to">
+<tt class="descname">linked_to</tt><a class="headerlink" href="#pynwn.trigger.Trigger.linked_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linked to object tag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.linked_to_flags">
+<tt class="descname">linked_to_flags</tt><a class="headerlink" href="#pynwn.trigger.Trigger.linked_to_flags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linked to flags.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.load_screen">
+<tt class="descname">load_screen</tt><a class="headerlink" href="#pynwn.trigger.Trigger.load_screen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load screen ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.paletted_id">
+<tt class="descname">paletted_id</tt><a class="headerlink" href="#pynwn.trigger.Trigger.paletted_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Palette ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.portrait_id">
+<tt class="descname">portrait_id</tt><a class="headerlink" href="#pynwn.trigger.Trigger.portrait_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Portrait ID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.trigger.Trigger.resref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resref.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.scripts">
+<tt class="descname">scripts</tt><a class="headerlink" href="#pynwn.trigger.Trigger.scripts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scripts.  Responds to script events:</p>
+<ol class="arabic simple">
+<li>Event.TRAP_DISARMED</li>
+<li>Event.TRAP_TRIGGERED</li>
+<li>Event.CLICK</li>
+<li>Event.HEARTBEAT</li>
+<li>Event.ENTER</li>
+<li>Event.EXIT</li>
+<li>Event.USER_DEFINED</li>
+</ol>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.trigger.Trigger.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.trigger.Trigger.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.trigger.Trigger.stage">
+<tt class="descname">stage</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.trigger.Trigger.stage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stages changes to GFF structure.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.trigger.Trigger.tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.trap_detect_dc">
+<tt class="descname">trap_detect_dc</tt><a class="headerlink" href="#pynwn.trigger.Trigger.trap_detect_dc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap detect DC.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.trap_detectable">
+<tt class="descname">trap_detectable</tt><a class="headerlink" href="#pynwn.trigger.Trigger.trap_detectable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap detectable flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.trap_disarm_dc">
+<tt class="descname">trap_disarm_dc</tt><a class="headerlink" href="#pynwn.trigger.Trigger.trap_disarm_dc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap disarm DC.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.trap_disarmable">
+<tt class="descname">trap_disarmable</tt><a class="headerlink" href="#pynwn.trigger.Trigger.trap_disarmable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap disarmable flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.trap_flag">
+<tt class="descname">trap_flag</tt><a class="headerlink" href="#pynwn.trigger.Trigger.trap_flag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.trap_one_shot">
+<tt class="descname">trap_one_shot</tt><a class="headerlink" href="#pynwn.trigger.Trigger.trap_one_shot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap one shot flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.trap_type">
+<tt class="descname">trap_type</tt><a class="headerlink" href="#pynwn.trigger.Trigger.trap_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.trigger.Trigger.type">
+<tt class="descname">type</tt><a class="headerlink" href="#pynwn.trigger.Trigger.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Type.</p>
+</dd></dl>
+
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="class">
+<dt id="pynwn.trigger.TriggerInstance">
+<em class="property">class </em><tt class="descclassname">pynwn.trigger.</tt><tt class="descname">TriggerInstance</tt><big>(</big><em>gff</em>, <em>parent_obj</em><big>)</big><a class="headerlink" href="#pynwn.trigger.TriggerInstance" title="Permalink to this definition">¶</a></dt>
+<dd><p>A trigger instance is one placed in an area in the toolset.
+As such it&#8217;s values are derived from its parent GFF structure.</p>
+<dl class="attribute">
+<dt id="pynwn.trigger.TriggerInstance.position">
+<tt class="descname">position</tt><a class="headerlink" href="#pynwn.trigger.TriggerInstance.position" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pynwn.trigger.TriggerInstance.stage">
+<tt class="descname">stage</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.trigger.TriggerInstance.stage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stages changes to parent GFF structure.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="store.html"
+                        title="previous chapter">Store</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="waypoint.html"
+                        title="next chapter">Waypoint</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/trigger.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="waypoint.html" title="Waypoint"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="store.html" title="Store"
+             >previous</a> |</li>
+        <li><a href="index.html">pynwn 0.1 documentation</a> &raquo;</li>
+          <li><a href="objects.html" >PyNWN Objects</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, jmd.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

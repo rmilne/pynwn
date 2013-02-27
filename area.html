@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Area &mdash; pynwn 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="pynwn 0.1 documentation" href="index.html" />
+    <link rel="up" title="PyNWN Objects" href="objects.html" />
+    <link rel="next" title="Creature" href="creature.html" />
+    <link rel="prev" title="PyNWN Objects" href="objects.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="creature.html" title="Creature"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="objects.html" title="PyNWN Objects"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">pynwn 0.1 documentation</a> &raquo;</li>
+          <li><a href="objects.html" accesskey="U">PyNWN Objects</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="area">
+<h1>Area<a class="headerlink" href="#area" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pynwn.area.Area">
+<em class="property">class </em><tt class="descclassname">pynwn.area.</tt><tt class="descname">Area</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.area.Area" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pynwn.area.Area.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.area.Area.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.__module__">
+<tt class="descname">__module__</tt><em class="property"> = 'pynwn.area'</em><a class="headerlink" href="#pynwn.area.Area.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.creatures">
+<tt class="descname">creatures</tt><a class="headerlink" href="#pynwn.area.Area.creatures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creature instances.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of CreatureInstance objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.doors">
+<tt class="descname">doors</tt><a class="headerlink" href="#pynwn.area.Area.doors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Door instances.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of DoorInstance objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.encounters">
+<tt class="descname">encounters</tt><a class="headerlink" href="#pynwn.area.Area.encounters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encounters</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of EncounterInstance objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.fog_clip_distance">
+<tt class="descname">fog_clip_distance</tt><a class="headerlink" href="#pynwn.area.Area.fog_clip_distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fog clip distance.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.area.Area.get_instances">
+<tt class="descname">get_instances</tt><big>(</big><em>list_name</em>, <em>instance_class</em><big>)</big><a class="headerlink" href="#pynwn.area.Area.get_instances" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pynwn.area.Area.get_name">
+<tt class="descname">get_name</tt><big>(</big><em>lang=None</em><big>)</big><a class="headerlink" href="#pynwn.area.Area.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.height">
+<tt class="descname">height</tt><a class="headerlink" href="#pynwn.area.Area.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Area height.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.placeables">
+<tt class="descname">placeables</tt><a class="headerlink" href="#pynwn.area.Area.placeables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Placeables</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of PlaceableInstance objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.resref">
+<tt class="descname">resref</tt><a class="headerlink" href="#pynwn.area.Area.resref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resref.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.script">
+<tt class="descname">script</tt><a class="headerlink" href="#pynwn.area.Area.script" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scripts.  Responds to script events:</p>
+<ol class="arabic simple">
+<li>Event.ENTER</li>
+<li>Event.EXIT</li>
+<li>Event.HEARTBEAT</li>
+<li>Event.USER_DEFINED</li>
+</ol>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.area.Area.set_name">
+<tt class="descname">set_name</tt><big>(</big><em>lang=None</em>, <em>string=None</em><big>)</big><a class="headerlink" href="#pynwn.area.Area.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Localized name.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.sounds">
+<tt class="descname">sounds</tt><a class="headerlink" href="#pynwn.area.Area.sounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sounds</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of SoundInstance objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pynwn.area.Area.stage">
+<tt class="descname">stage</tt><big>(</big><big>)</big><a class="headerlink" href="#pynwn.area.Area.stage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stages changes to the Area&#8217;s GFF structures.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.stores">
+<tt class="descname">stores</tt><a class="headerlink" href="#pynwn.area.Area.stores" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stores</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of StoreInstance objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.tag">
+<tt class="descname">tag</tt><a class="headerlink" href="#pynwn.area.Area.tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.tiles">
+<tt class="descname">tiles</tt><a class="headerlink" href="#pynwn.area.Area.tiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tiles
+:returns: List of TileInstance objects.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.tileset">
+<tt class="descname">tileset</tt><a class="headerlink" href="#pynwn.area.Area.tileset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tileset.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.triggers">
+<tt class="descname">triggers</tt><a class="headerlink" href="#pynwn.area.Area.triggers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Triggers</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of TriggerInstance objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.waypoints">
+<tt class="descname">waypoints</tt><a class="headerlink" href="#pynwn.area.Area.waypoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Waypoints</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of WaypointInstance objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.width">
+<tt class="descname">width</tt><a class="headerlink" href="#pynwn.area.Area.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>Area width.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="objects.html"
+                        title="previous chapter">PyNWN Objects</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="creature.html"
+                        title="next chapter">Creature</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/area.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="creature.html" title="Creature"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="objects.html" title="PyNWN Objects"
+             >previous</a> |</li>
+        <li><a href="index.html">pynwn 0.1 documentation</a> &raquo;</li>
+          <li><a href="objects.html" >PyNWN Objects</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, jmd.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
