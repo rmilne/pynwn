@@ -61,15 +61,11 @@
 <dl class="class">
 <dt id="pynwn.area.Area">
 <em class="property">class </em><tt class="descclassname">pynwn.area.</tt><tt class="descname">Area</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.area.Area" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
-<dt id="pynwn.area.Area.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>resref</em>, <em>container</em><big>)</big><a class="headerlink" href="#pynwn.area.Area.__init__" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="pynwn.area.Area.__module__">
-<tt class="descname">__module__</tt><em class="property"> = 'pynwn.area'</em><a class="headerlink" href="#pynwn.area.Area.__module__" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><dl class="attribute">
+<dt id="pynwn.area.Area.comments">
+<tt class="descname">comments</tt><a class="headerlink" href="#pynwn.area.Area.comments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Comments.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="pynwn.area.Area.creatures">
@@ -83,6 +79,42 @@
 </tr>
 </tbody>
 </table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.day_ambient_color">
+<tt class="descname">day_ambient_color</tt><a class="headerlink" href="#pynwn.area.Area.day_ambient_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Day ambient color.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.day_diffuse_color">
+<tt class="descname">day_diffuse_color</tt><a class="headerlink" href="#pynwn.area.Area.day_diffuse_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Day diffuse color.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.day_fog_amount">
+<tt class="descname">day_fog_amount</tt><a class="headerlink" href="#pynwn.area.Area.day_fog_amount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Daytime fog amount (0-15)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.day_fog_color">
+<tt class="descname">day_fog_color</tt><a class="headerlink" href="#pynwn.area.Area.day_fog_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Daytime fog color (BGR format)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.day_night_cycle">
+<tt class="descname">day_night_cycle</tt><a class="headerlink" href="#pynwn.area.Area.day_night_cycle" title="Permalink to this definition">¶</a></dt>
+<dd><p>1 if day/night transitions occur, 0 otherwise.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.day_shadows">
+<tt class="descname">day_shadows</tt><a class="headerlink" href="#pynwn.area.Area.day_shadows" title="Permalink to this definition">¶</a></dt>
+<dd><p>1 if shadows appear during the day, 0 otherwise.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -114,15 +146,16 @@
 </dd></dl>
 
 <dl class="attribute">
+<dt id="pynwn.area.Area.flags">
+<tt class="descname">flags</tt><a class="headerlink" href="#pynwn.area.Area.flags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bit flags specifying area terrain type.</p>
+</dd></dl>
+
+<dl class="attribute">
 <dt id="pynwn.area.Area.fog_clip_distance">
 <tt class="descname">fog_clip_distance</tt><a class="headerlink" href="#pynwn.area.Area.fog_clip_distance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fog clip distance.</p>
 </dd></dl>
-
-<dl class="method">
-<dt id="pynwn.area.Area.get_instances">
-<tt class="descname">get_instances</tt><big>(</big><em>list_name</em>, <em>instance_class</em><big>)</big><a class="headerlink" href="#pynwn.area.Area.get_instances" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 <dl class="method">
 <dt id="pynwn.area.Area.get_name">
@@ -137,6 +170,86 @@
 </dd></dl>
 
 <dl class="attribute">
+<dt id="pynwn.area.Area.is_night">
+<tt class="descname">is_night</tt><a class="headerlink" href="#pynwn.area.Area.is_night" title="Permalink to this definition">¶</a></dt>
+<dd><p>1 if always night, 0 if always day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.items">
+<tt class="descname">items</tt><a class="headerlink" href="#pynwn.area.Area.items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Item instance list.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of ItemInstance objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.lighting_scheme">
+<tt class="descname">lighting_scheme</tt><a class="headerlink" href="#pynwn.area.Area.lighting_scheme" title="Permalink to this definition">¶</a></dt>
+<dd><p>Index into environment.2da</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.lightning">
+<tt class="descname">lightning</tt><a class="headerlink" href="#pynwn.area.Area.lightning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Chance of lighting [0,100]</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.listen_modifier">
+<tt class="descname">listen_modifier</tt><a class="headerlink" href="#pynwn.area.Area.listen_modifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modifier to Listen skill checks made in area</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.load_screen">
+<tt class="descname">load_screen</tt><a class="headerlink" href="#pynwn.area.Area.load_screen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load screen ID</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.night_ambient_color">
+<tt class="descname">night_ambient_color</tt><a class="headerlink" href="#pynwn.area.Area.night_ambient_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Nighttime ambient color.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.night_diffuse_color">
+<tt class="descname">night_diffuse_color</tt><a class="headerlink" href="#pynwn.area.Area.night_diffuse_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Nighttime diffuse color.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.night_fog_amount">
+<tt class="descname">night_fog_amount</tt><a class="headerlink" href="#pynwn.area.Area.night_fog_amount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Nighttime fog amount (0-15)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.night_fog_color">
+<tt class="descname">night_fog_color</tt><a class="headerlink" href="#pynwn.area.Area.night_fog_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Nighttime fog color.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.night_shadows">
+<tt class="descname">night_shadows</tt><a class="headerlink" href="#pynwn.area.Area.night_shadows" title="Permalink to this definition">¶</a></dt>
+<dd><p>1 if shadows appear at night, 0 otherwise</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.no_rest">
+<tt class="descname">no_rest</tt><a class="headerlink" href="#pynwn.area.Area.no_rest" title="Permalink to this definition">¶</a></dt>
+<dd><p>1 if resting is not allowed, 0 otherwise</p>
+</dd></dl>
+
+<dl class="attribute">
 <dt id="pynwn.area.Area.placeables">
 <tt class="descname">placeables</tt><a class="headerlink" href="#pynwn.area.Area.placeables" title="Permalink to this definition">¶</a></dt>
 <dd><p>Placeables</p>
@@ -148,6 +261,18 @@
 </tr>
 </tbody>
 </table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.pvp">
+<tt class="descname">pvp</tt><a class="headerlink" href="#pynwn.area.Area.pvp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Area PvP setting.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.rain">
+<tt class="descname">rain</tt><a class="headerlink" href="#pynwn.area.Area.rain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Chance of rain [0,100]</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -175,6 +300,24 @@
 </dd></dl>
 
 <dl class="attribute">
+<dt id="pynwn.area.Area.shadow_opacity">
+<tt class="descname">shadow_opacity</tt><a class="headerlink" href="#pynwn.area.Area.shadow_opacity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opacity of shadows (0-100).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.skybox">
+<tt class="descname">skybox</tt><a class="headerlink" href="#pynwn.area.Area.skybox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Index into skyboxes.2da.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.snow">
+<tt class="descname">snow</tt><a class="headerlink" href="#pynwn.area.Area.snow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Chance of snow [0,100]</p>
+</dd></dl>
+
+<dl class="attribute">
 <dt id="pynwn.area.Area.sounds">
 <tt class="descname">sounds</tt><a class="headerlink" href="#pynwn.area.Area.sounds" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sounds</p>
@@ -186,6 +329,12 @@
 </tr>
 </tbody>
 </table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.spot_modifier">
+<tt class="descname">spot_modifier</tt><a class="headerlink" href="#pynwn.area.Area.spot_modifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modifier to Spot skill checks made in area</p>
 </dd></dl>
 
 <dl class="method">
@@ -242,6 +391,18 @@
 </dd></dl>
 
 <dl class="attribute">
+<dt id="pynwn.area.Area.vars">
+<tt class="descname">vars</tt><a class="headerlink" href="#pynwn.area.Area.vars" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable table</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.version">
+<tt class="descname">version</tt><a class="headerlink" href="#pynwn.area.Area.version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Area version</p>
+</dd></dl>
+
+<dl class="attribute">
 <dt id="pynwn.area.Area.waypoints">
 <tt class="descname">waypoints</tt><a class="headerlink" href="#pynwn.area.Area.waypoints" title="Permalink to this definition">¶</a></dt>
 <dd><p>Waypoints</p>
@@ -259,6 +420,12 @@
 <dt id="pynwn.area.Area.width">
 <tt class="descname">width</tt><a class="headerlink" href="#pynwn.area.Area.width" title="Permalink to this definition">¶</a></dt>
 <dd><p>Area width.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pynwn.area.Area.wind_power">
+<tt class="descname">wind_power</tt><a class="headerlink" href="#pynwn.area.Area.wind_power" title="Permalink to this definition">¶</a></dt>
+<dd><p>Strength of the wind in the area. None, weak, or strong (0-2).</p>
 </dd></dl>
 
 </dd></dl>

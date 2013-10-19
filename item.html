@@ -60,7 +60,7 @@
 <h1>Item<a class="headerlink" href="#item" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="pynwn.item.Item">
-<em class="property">class </em><tt class="descclassname">pynwn.item.</tt><tt class="descname">Item</tt><big>(</big><em>resref</em>, <em>container</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.item.Item" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pynwn.item.</tt><tt class="descname">Item</tt><big>(</big><em>resource</em>, <em>instance=False</em><big>)</big><a class="headerlink" href="#pynwn.item.Item" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="attribute">
 <dt id="pynwn.item.Item.base_type">
 <tt class="descname">base_type</tt><a class="headerlink" href="#pynwn.item.Item.base_type" title="Permalink to this definition">¶</a></dt>
@@ -200,6 +200,12 @@
 <dd><p>Tag.</p>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="pynwn.item.Item.vars">
+<tt class="descname">vars</tt><a class="headerlink" href="#pynwn.item.Item.vars" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable table</p>
+</dd></dl>
+
 </dd></dl>
 
 <hr class="docutils" />
@@ -219,7 +225,7 @@ As such it&#8217;s values are derived from its parent GFF structure.</p>
 <hr class="docutils" />
 <dl class="class">
 <dt id="pynwn.item.ItemProperty">
-<em class="property">class </em><tt class="descclassname">pynwn.item.</tt><tt class="descname">ItemProperty</tt><big>(</big><em>gff</em><big>)</big><a class="headerlink" href="#pynwn.item.ItemProperty" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pynwn.item.</tt><tt class="descname">ItemProperty</tt><big>(</big><em>gff</em>, <em>parent_obj</em><big>)</big><a class="headerlink" href="#pynwn.item.ItemProperty" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="attribute">
 <dt id="pynwn.item.ItemProperty.chance">
 <tt class="descname">chance</tt><a class="headerlink" href="#pynwn.item.ItemProperty.chance" title="Permalink to this definition">¶</a></dt>
