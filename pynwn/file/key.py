@@ -1,7 +1,7 @@
 import struct, os, sys
 
 import pynwn.resource as res
-from pynwn.util.helper import chunks, get_encoding
+from pynwn.util import chunks, get_encoding
 
 class Bif:
     """A Bif object encapsulates an open file handle pointing

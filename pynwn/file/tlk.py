@@ -1,7 +1,7 @@
 import struct, sys, os
 
 from pynwn.nwn.consts import *
-from pynwn.util.helper import get_encoding
+from pynwn.util import get_encoding
 
 class Tlk:
     """Loads a TLK file from a file handle.

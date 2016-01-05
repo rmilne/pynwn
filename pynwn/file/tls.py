@@ -3,7 +3,7 @@ import re, struct, sys, os
 ENTRY_RE = re.compile('^<(\d+)><\d*>:(.+)')
 
 from pynwn.file.tlk import Tlk
-from pynwn.util.helper import get_encoding
+from pynwn.util import get_encoding
 
 class Tls:
     def __init__(self, filename=None):
