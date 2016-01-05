@@ -56,4 +56,5 @@ class NWObjectScripts:
 
         :returns: [(Event, str)]
         """
-        return [(key, self[key]) for key in self.map.keys() if len(self[key])]
+        return [(key, self[key]) for key in self.map.keys() \
+                if self[key] is not None and len(self[key])]
